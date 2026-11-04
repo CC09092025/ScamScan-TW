@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Generated Tailwind CSS
+css/output.css
+
+# Environment variables
+.env
+.env.*
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

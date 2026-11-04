@@ -1,0 +1,25 @@
+{
+  "name": "scamscantw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  },
+  "allowScripts": {
+    "tailwindcss@4.3.4": true,
+    "@parcel/watcher@2.6.0": true
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
