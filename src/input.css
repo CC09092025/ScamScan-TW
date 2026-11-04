@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @layer components {
-    .category-list a {
-        @apply border-2 border-solid border-stone-300 bg-white text-stone-800 font-medium py-[0.6rem] px-[1.1rem] rounded-full transition-colors hover:border-orange-500 hover:text-orange-700;
-    }
+  .category-list a {
+    @apply border-2 border-solid border-stone-300 bg-white text-stone-800 font-medium py-[0.6rem] px-[1.1rem] rounded-full transition-colors hover:border-orange-500 hover:text-orange-700;
+  }
 
-    .steps-list li {
-        @apply [counter-increment:step] bg-white border border-stone-200 border-l-4 border-l-orange-500 rounded-xl py-5 px-6;
-    }
+  .steps-list li {
+    @apply [counter-increment:step] bg-white border border-stone-200 border-l-4 border-l-orange-500 rounded-xl py-5 px-6;
+  }
 
-    .steps-list li::before {
-        content: counter(step);
-        @apply text-2xl font-bold text-orange-600;
-    }
+  .steps-list li::before {
+    content: counter(step);
+    @apply text-2xl font-bold text-orange-600;
+  }
 }
