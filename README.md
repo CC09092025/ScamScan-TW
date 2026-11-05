@@ -20,6 +20,23 @@ ScamScan is a school project developed as part of a Web Development course. Its 
 - **Responsive Design:** An interface designed to accommodate different screen sizes and devices.
 - **Consistent Iconography:** Lucide icons provide a consistent visual language across navigation, interactive elements, and educational resources.
 
+## Showcase
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="docs/images/home.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+<td width="50%" valign="top"><img src="docs/images/learn.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+</tr>
+</table>
+
 ## Technologies Used
 
 | Technology                               | Purpose                                                                                           |
