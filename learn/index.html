@@ -1,4 +1,4 @@
-<!doctype htm>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,34 +8,11 @@
 
     <title>ScamScan — Learn</title>
   </head>
-  <body class="min-h-screen bg-stone-50 text-stone-800">
-    <header class="border-b border-stone-200 bg-white">
-      <div
-        class="mx-auto flex min-h-20 max-w-7xl flex-row items-center justify-between px-4 tracking-tight max-md:flex-col max-md:justify-center max-md:gap-4 max-md:py-4"
-      >
-        <h1 class="text-2xl font-bold text-stone-900">
-          <a href="/">Scam<span class="text-orange-600">Scan</span></a>
-        </h1>
 
-        <ul class="flex items-center gap-6 font-medium text-stone-600">
-          <li>
-            <a href="" class="transition-colors hover:text-orange-600">Play</a>
-          </li>
-          <li>
-            <a href="" class="transition-colors hover:text-orange-600"
-              >Categories</a
-            >
-          </li>
-          <li>
-            <a href="" class="transition-colors hover:text-orange-600">Learn</a>
-          </li>
-          <li>
-            <a href="" class="transition-colors hover:text-orange-600">About</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="mx-auto mt-10 max-w-7xl space-y-16">
+  <body class="flex min-h-screen flex-col bg-stone-50 text-stone-800">
+    <div id="header"></div>
+
+    <main class="mx-auto mt-10 w-full max-w-7xl flex-1 space-y-16 px-8">
       <section>
         <h2 class="mb-6 text-5xl font-bold text-stone-900">Learn</h2>
         <p class="text-base">
@@ -45,5 +22,9 @@
         </p>
       </section>
     </main>
+
+    <div id="footer"></div>
+
+    <script type="module" src="/js/components.js"></script>
   </body>
 </html>
