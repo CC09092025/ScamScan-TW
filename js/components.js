@@ -1,3 +1,34 @@
+import {
+  createIcons,
+  Mail,
+  Phone,
+  Smartphone,
+  CircleExclamationPoint,
+  ChartNoAxesCombined,
+  ShoppingCart,
+  MessageSquareDot,
+  Shield,
+  Menu,
+  Search,
+  BriefcaseBusiness,
+  QrCode,
+} from "lucide";
+
+const lucideIcons = {
+  Mail,
+  Phone,
+  Smartphone,
+  CircleExclamationPoint,
+  ChartNoAxesCombined,
+  ShoppingCart,
+  MessageSquareDot,
+  Shield,
+  Menu,
+  Search,
+  BriefcaseBusiness,
+  QrCode,
+};
+
 async function loadComponent(selector, file) {
   const element = document.querySelector(selector);
 
@@ -11,6 +42,9 @@ async function loadComponent(selector, file) {
   }
 
   element.innerHTML = await response.text();
+
+  // Initialize Lucide icons
+  createIcons({ icons: lucideIcons });
 
   if (selector === "#header") {
     document.dispatchEvent(new Event("headerLoaded"));
