@@ -13,6 +13,7 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.4",
+    "lucide": "^1.68.0",
     "tailwindcss": "^4.3.4"
   },
   "allowScripts": {
