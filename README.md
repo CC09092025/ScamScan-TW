@@ -52,10 +52,12 @@ ScamScan is a school project developed as part of a Web Development course. Its 
 
 ## Development Tools
 
-| Tool                                                                                            | Purpose                                                                     |
-| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| [Prettier](https://prettier.io/)                                                                | Code formatter used to maintain consistent formatting across project files. |
-| [Prettier Plugin for Tailwind CSS](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) | Prettier plugin that automatically sorts Tailwind CSS utility classes.      |
+| Tool                                                                                            | Purpose                                                                                                        |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [Prettier](https://prettier.io/)                                                                | Code formatter used to maintain consistent formatting across project files.                                    |
+| [Prettier Plugin for Tailwind CSS](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) | Prettier plugin that automatically sorts Tailwind CSS utility classes.                                         |
+| [ESLint](https://eslint.org/)                                                                   | JavaScript linter used to identify potential errors and enforce consistent coding conventions.                 |
+| [ESLint Plugin Perfectionist](https://perfectionist.dev/)                                       | ESLint plugin used to automatically sort imports, object properties, and other code structures alphabetically. |
 
 ## Requirements
 
@@ -73,7 +75,9 @@ The following are included as project dependencies and will be installed automat
 **Optional Development Tools:**
 
 - **Prettier:** Code formatter used to maintain consistent formatting across project files.
-- **Prettier Plugin for Tailwind CSS:** Prettier extension that automatically sorts Tailwind CSS utility classes.
+- **Prettier Plugin for Tailwind CSS:** Prettier plugin that automatically sorts Tailwind CSS utility classes.
+- **ESLint:** JavaScript linter used to identify potential errors and enforce coding conventions.
+- **ESLint Plugin Perfectionist:** ESLint plugin that enforces consistent alphabetical ordering of imports and object properties.
 
 ## Installation and Setup
 
@@ -100,12 +104,14 @@ npm run dev
 
 ## Available Scripts
 
-| Command          | Description                            |
-| ---------------- | -------------------------------------- |
-| npm run dev      | Starts the Vite development server.    |
-| npm run build    | Builds the project for production.     |
-| npm run preview  | Previews the production build locally. |
-| npm run tailwind | Compiles the Tailwind CSS stylesheet.  |
+| Command            | Description                                                           |
+| ------------------ | --------------------------------------------------------------------- |
+| `npm run dev`      | Starts the Vite development server.                                   |
+| `npm run build`    | Builds the project for production.                                    |
+| `npm run preview`  | Previews the production build locally.                                |
+| `npm run tailwind` | Compiles the Tailwind CSS stylesheet.                                 |
+| `npm run lint`     | Checks JavaScript files for linting errors and sorting violations.    |
+| `npm run lint:fix` | Automatically fixes applicable linting errors and sorting violations. |
 
 ## Disclaimer
 

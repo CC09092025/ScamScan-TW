@@ -21,6 +21,8 @@
     "@parcel/watcher@2.6.0": true
   },
   "devDependencies": {
+    "eslint": "^10.14.0",
+    "eslint-plugin-perfectionist": "^5.13.0",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "vite": "^8.3.5"
