@@ -9,22 +9,22 @@ export default [
       "perfectionist/sort-imports": [
         "error",
         {
-          type: "alphabetical",
           order: "asc",
+          type: "alphabetical",
         },
       ],
       "perfectionist/sort-named-imports": [
         "error",
         {
-          type: "alphabetical",
           order: "asc",
+          type: "alphabetical",
         },
       ],
       "perfectionist/sort-objects": [
         "error",
         {
-          type: "alphabetical",
           order: "asc",
+          type: "alphabetical",
         },
       ],
     },
