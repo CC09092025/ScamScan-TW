@@ -146,11 +146,11 @@ Most scams do not rely on zero-day vulnerabilities or sophisticated technical ex
 
 ### 2.5 GitHub Issues
 
-1. Build the home page and the core page (HTML): https://github.com/...
-2. Style the site: palette, responsive layout and components: https://github.com/...
-3. Feature (Must): https://github.com/...
-4. Feature (Must): https://github.com/...
-5. Feature (Must): https://github.com/...
+1. Build the home page and the core page (HTML): I built the _Home (/)_ page in `main` without any GitHub Issues, and the same goes for _/play/email_, but a [GitHub Pull Request](https://github.com/CC09092025/ScamScan-TW/pull/3) exists.
+2. Style the site: palette, responsive layout and components: I initially built the CSS throughout in `main` using Tailwind CSS, and combined them together into a consistent pallet in `theme/merge`, but the merge was done with Git, not GitHub therefore only the [commit](https://github.com/CC09092025/ScamScan-TW/commit/5e92c1397533867c598978f39a7dcbc875737714) in `main` still exists along with the `theme/merge` [branch](https://github.com/CC09092025/ScamScan-TW/tree/theme/merge).
+3. Feature (Must): https://github.com/CC09092025/ScamScan-TW/issues/6
+4. Feature (Must): https://github.com/CC09092025/ScamScan-TW/issues/7
+5. Feature (Must): https://github.com/CC09092025/ScamScan-TW/issues/8
 
 ### 2.6 Abstract Check
 
@@ -327,7 +327,7 @@ Core page (Email game)
 - [ ] The form has a `label`, `id` and `name` for every control
 - [x] Informative images have real alt text and decorative ones use `alt=""`
 - [x] No lorem ipsum anywhere
-- [ ] I used at least one absolute, one relative and one same-page link
+- [x] I used at least one absolute, one relative and one same-page link
 
 ### 6.3 Validator results
 
@@ -361,81 +361,121 @@ Core page (Email game)
 
 ### 7.2 Checks
 
-- [ ] Every colour, font, spacing and radius comes from `:root`
-- [ ] No `!important`, no inline `style`
-- [ ] Mobile first, with at least two `min-width` media queries
-- [ ] Flexbox is used for the header and nav, and Grid for the cards
-- [ ] `.btn` and `.card` (or my own reusable classes) are used everywhere
-- [ ] There is no sideways page scroll at 375px
-- [ ] The page still looks decent with Google Fonts blocked
+- [x] Every colour, font, spacing and radius comes from `:root`
+- [x] No `!important`, no inline `style`
+- [x] Mobile first, with at least two `min-width` media queries
+- [x] Flexbox is used for the header and nav, and Grid for the cards
+- [x] `.btn` and `.card` (or my own reusable classes) are used everywhere
+- [x] There is no sideways page scroll at 375px
+- [x] The page still looks decent with Google Fonts blocked
 
 ### 7.3 Contrast re-check
 
-**Pairs I re-tested on the built page, and any I had to change:** YOUR ANSWER HERE
+**Pairs I re-tested on the built page, and any I had to change:** I only had to change one colour pairing. The light mode button text originally used white (`#FFFFFF`) on the orange accent (`#EA5800`), which had a contrast ratio of 3.55:1 and did not pass. I changed the text colour to `#171615`, increasing the ratio to 5.07:1 and meeting the contrast requirements.
 
 ### 7.4 CSS validator
 
-**What the W3C CSS Validator said (and whether any warning matters):** YOUR ANSWER HERE
+**What the W3C CSS Validator said (and whether any warning matters):** Testing the `output.css` tailwind generates (not `input.css`), it gave errors related to Vendor extensions, Vendor pseudo-classes and elements, CSS variables not statically checked, and a compatability warning with `apperance: button`. I chose to ignore these warnings because they primarily relate to browser-specific CSS extensions, pseudo-elements, and dynamically resolved CSS variables. These are intentional parts of the styling used to maintain browser compatibility and customize form elements. The warnings do not indicate actual CSS errors, and removing or changing these declarations could negatively affect the website's appearance or functionality.
 
 ### 7.5 Screenshots
 
-> Embed them: `screenshots/home-375.png`, `screenshots/home-1280.png`, `screenshots/core-375.png`, `screenshots/core-1280.png`.
+#### Home Page
 
-YOUR ANSWER HERE
+![Home page](./milestone-one/desktopHome.png)
+![Home page mobile](./milestone-one/mobileHomeOne.png)
+
+#### "Core" Page (/play/email)
+
+![Core page](./milestone-one/desktopCore.png)
+![Core page mobile](./milestone-one/mobileCoreOne.png)
 
 ---
 
 ## Part 8: Git and GitHub
 
-**Repository:** https://github.com/...
-**Issue #1 (closed):** https://github.com/...
-**Issue #2 (closed):** https://github.com/...
-**Merged Pull Request for HTML:** https://github.com/...
-**Merged Pull Request for CSS:** https://github.com/...
-**Release v0.1.0:** https://github.com/...
+- **Repository:** https://github.com/CC09092025/ScamScan-TW
+- **Issue #1 (closed):** https://github.com/CC09092025/ScamScan-TW/issues/4
+- **Issue #2 (closed):** https://github.com/CC09092025/ScamScan-TW/issues/5
+- **Merged Pull Request for HTML:** https://github.com/CC09092025/ScamScan-TW/pull/3
+- **Merged Pull Request for CSS:** I used Git to merge _theme/merge_, so there's no merge request on GitHub to reference.
+- **Release v0.1.0:** TODO
 
 ```text
-(git log --oneline | wc -l)
+~/Projects/ScamScan-TW main*
+❯ git log --oneline | wc -l
+49
 ```
 
 ```text
-(git log --format='%ad' --date=short | sort -u | wc -l)
+❯ git log --format='%ad' --date=short | sort -u | wc -l
+4
 ```
 
 ```text
-(git branch -a)
+~/Projects/ScamScan-TW main*
+❯ git branch -a
+  game/pages
+  learn/pages
+* main
+  theme/merge
+  ui/lucide
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/game/pages
+  remotes/origin/learn/pages
+  remotes/origin/main
+  remotes/origin/theme/merge
+  remotes/origin/ui/lucide
 ```
 
 ```text
-(git log --oneline --graph --all | head -20)
+~/Projects/ScamScan-TW main*
+❯ git log --oneline --graph --all | head -20
+* 88f0f57 Added basic tests.
+* 07eb2fd Fixed validation issues.
+* 24b45c6 Fixed error where Vite Build and Preview only built Root Index.HTML
+* f750304 Small additional theming changes.
+* 5e92c13 Updated styling for consistency across all pages.
+* 2eae9ef milestone one document, wireframe document and images, abstract document
+* d11a80e Updated screenshots, added new screenshots, and updated README with screenshots.
+* e1a91f6 Added dividers on more examples for clarity
+*   25a7cb6 Merge pull request #3 from CC09092025/game/pages
+|\
+| * 33f5864 Added Text Messages Play Page
+| * 02d3a06 Fixed warnings in email page.
+| * 6c5cf1f Email Placeholder HTML
+* |   c71db9d Merge pull request #2 from CC09092025/learn/pages
+|\ \
+| * | 12f56fd Added Email Learn Page
+| * | f44b864 Placeholder for the Email Learn Page, Still In Progress
+* | | e9c36fc Resolved Errors in Eslint Config File
+|/ /
+* | 8f36641 Added ESLint for Automatically Sorting Imports, Object Properties, and Other Code Structures
 ```
 
 ---
 
 ## Part 9: Reflection
 
-> Two to four sentences each, about your own project.
-
-1. **From idea to problem:** YOUR ANSWER HERE
-2. **Evidence:** YOUR ANSWER HERE
-3. **The hardest decision:** YOUR ANSWER HERE
-4. **Design to code:** YOUR ANSWER HERE
-5. **Risks for the next milestones:** YOUR ANSWER HERE
-6. **Tools (including any AI tool, and what I did myself):** YOUR ANSWER HERE
+1. **From idea to problem:** The idea was to create a website that helps people recognize scams. I developed this into ScamScan, a platform that combines educational resources with interactive scenarios where users can practice identifying suspicious messages and other common scams.
+2. **Evidence:** I identified scam awareness as the central problem the website should address and used that to guide its features. However, I did not collect enough direct feedback from real people to properly validate my assumptions, which is something I should improve in future milestones.
+3. **The hardest decision:** One of the hardest decisions was determining how to organize the website and its features. I wanted to separate educational content from interactive gameplay while keeping both connected and easy to navigate.
+4. **Design to code:** Translating the design into code involved creating reusable components and maintaining a consistent appearance across the pages. I used shared styling, Tailwind CSS, and reusable header and footer components to make the website easier to maintain.
+5. **Risks for the next milestones:** The biggest risks are completing the interactive scenarios, ensuring the educational content is accurate, and thoroughly testing the website. I also need to make sure the different pages remain responsive and consistent as more features are added.
+6. **Tools (including any AI tool, and what I did myself):** I used Vite, Tailwind CSS, JavaScript, Git, and GitHub throughout development. I also used ChatGPT and Claude for assistance with troubleshooting, explanations, and reviewing parts of the project. I completed the implementation, made the design decisions, managed the repository, and tested the website myself.
 
 ### Self-assessment
 
-| Area                            | Points | My score | One line of justification |
-| ------------------------------- | ------ | -------- | ------------------------- |
-| Problem definition and evidence | 15     |          |                           |
-| Scope and data                  | 10     |          |                           |
-| Storyboard                      | 10     |          |                           |
-| Wireframes and site map         | 10     |          |                           |
-| Design decisions                | 5      |          |                           |
-| HTML                            | 15     |          |                           |
-| CSS and responsiveness          | 15     |          |                           |
-| Git and GitHub                  | 15     |          |                           |
-| Reflection and completeness     | 5      |          |                           |
+| Area                            | Points | My score | One line of justification                                                                                                              |
+| ------------------------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Problem definition and evidence | 15     | 15       | The project is based on a problem statement with strong, objective evidence.                                                           |
+| Scope and data                  | 10     | 8        | Some of the "forward looking" features may be more ambitious, but the essentials are strong.                                           |
+| Storyboard                      | 10     |          |                                                                                                                                        |
+| Wireframes and site map         | 10     | 9        | The email wireframe is a little complicated, but overall they provide a good idea on what to do.                                       |
+| Design decisions                | 5      | 4        | I believe the design decisions made were strong and sensible, although some of the reasoning could be explained in more detail.        |
+| HTML                            | 15     | 14       | I believe the HTML is strong, keeping the simple yet sensible layout of the website.                                                   |
+| CSS and responsiveness          | 15     | 12       | The website is responsive and maintains a consistent theme, although some validation and documentation tasks remain incomplete.        |
+| Git and GitHub                  | 15     | 7        | I used Git consistently for version control, but some work was completed manually rather than through GitHub issues and pull requests. |
+| Reflection and completeness     | 5      | 4        | The reflection addresses the major parts of the project, although some documentation and submission requirements remain incomplete.    |
 
 ## Bonus (optional)
 
