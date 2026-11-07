@@ -162,16 +162,12 @@ Most scams do not rely on zero-day vulnerabilities or sophisticated technical ex
 
 > Four to six panels. The first shows the problem, the last shows it solved, and the same persona appears throughout. Save images in `design/storyboard/` and embed them below with `![description](design/storyboard/panel-1.jpg)`.
 
-| Panel | Scene (where, who) | What happens | What they think or feel | Screen shown |
-| ----- | ------------------ | ------------ | ----------------------- | ------------ |
-| 1     |                    |              |                         |              |
-| 2     |                    |              |                         |              |
-| 3     |                    |              |                         |              |
-| 4     |                    |              |                         |              |
-
-**My storyboard images:**
-
-YOUR ANSWER HERE
+| Panel | Scene (where, who)                | What happens                                                                                                                                                                                  | What they think or feel                              | Screen shown                               |
+| ----- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------ |
+| 1     | Person checking emails at home    | A person is checking their email when they receive a message claiming their cloud storage is full and their photos will be permanently deleted unless they upgrade their storage immediately. | Confused and unsure whether the email is legitimate. | ![panel 1](./design/storyboard/panel1.png) |
+| 2     | Same person at their computer     | Searches for ways to recognize phishing emails and discovers ScamScan.                                                                                                                        | Interested in learning how to identify scams.        | ![panel 2](./design/storyboard/panel2.png) |
+| 3     | Same person using ScamScan        | Completes a learning module and practises identifying suspicious elements in an email.                                                                                                        | More confident in recognizing warning signs.         | ![panel 3](./design/storyboard/panel3.png) |
+| 4     | Same person checking their emails | Recognizes a suspicious email and avoids interacting with it.                                                                                                                                 | Confident that they can recognize potential scams.   | ![panel 4](./design/storyboard/panel4.png) |
 
 ---
 
@@ -325,9 +321,12 @@ Core page (Email game)
 - [ ] The `nav` links to both pages and marks the current one with `class="active"`
 - [x] There is a list of repeated items, each an `article`
 - [ ] The form has a `label`, `id` and `name` for every control
-- [x] Informative images have real alt text and decorative ones use `alt=""`
+- [ ] Informative images have real alt text and decorative ones use `alt=""`
 - [x] No lorem ipsum anywhere
 - [x] I used at least one absolute, one relative and one same-page link
+
+There are currently no forms on the website. Therefore "The form as a `label`, `id`, and `name` for every control cannot be checked.
+There are also no images on the website. Therefore there's nothing to add alt text to.
 
 ### 6.3 Validator results
 
