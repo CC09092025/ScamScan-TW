@@ -29,11 +29,11 @@ ScamScan is a school project developed as part of a Web Development course. Its 
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="docs/images/play.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
-<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+<td width="50%" valign="top"><img src="docs/images/about.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
-<td width="50%" valign="top"><img src="docs/images/blank.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+<td width="50%" valign="top"><img src="docs/images/learnEmail.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
+<td width="50%" valign="top"><img src="docs/images/playEmailPlaceholder.png" alt="Placeholder image description." width="100%"><p align="center"><sub><b>Placeholder.</b> Placeholder text describing the image and its contents.</sub></p></td>
 </tr>
 </table>
 
