@@ -1,11 +1,14 @@
 import {
+  Apple,
   BookOpen,
   BriefcaseBusiness,
   ChartNoAxesCombined,
   CircleExclamationPoint,
   createIcons,
   Gamepad2,
+  Grid2x2,
   Info,
+  Lightbulb,
   Mail,
   Menu,
   MessageSquareDot,
@@ -16,15 +19,21 @@ import {
   ShieldCheck,
   ShoppingCart,
   Smartphone,
+  Terminal,
+  ThumbsUp,
+  TriangleExclamationPoint,
 } from "lucide";
 
 const lucideIcons = {
+  Apple,
   BookOpen,
   BriefcaseBusiness,
   ChartNoAxesCombined,
   CircleExclamationPoint,
   Gamepad2,
+  Grid2x2,
   Info,
+  Lightbulb,
   Mail,
   Menu,
   MessageSquareDot,
@@ -35,6 +44,9 @@ const lucideIcons = {
   ShieldCheck,
   ShoppingCart,
   Smartphone,
+  Terminal,
+  ThumbsUp,
+  TriangleExclamationPoint,
 };
 
 async function loadComponent(selector, file) {
