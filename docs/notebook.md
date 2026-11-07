@@ -231,7 +231,7 @@ Core page (Email game)
 
 ### 5.1 Mood
 
-- **Three words:** YOUR ANSWER HERE
+- **Three words:** Simple, professional, approachable.
 - **Why they fit my persona:** YOUR ANSWER HERE
 
 ### 5.2 Palette
@@ -296,17 +296,15 @@ Core page (Email game)
 
 ### 5.5 Pace check
 
-> Halfway through your time, run `git log --format='%ad' --date=short | sort -u | wc -l`. You need commits on at least four different days.
-
 ```text
-(paste the number here)
+~/Projects/ScamScan-TW main* ⇡
+❯ git log --format='%ad' --date=short | sort -u | wc -l
+4
 ```
 
 ---
 
 ## Part 6: Build the Structure (HTML)
-
-For your ScamScan homepage, you could fill it out like this:
 
 ### 6.1 Build table
 
@@ -322,21 +320,31 @@ For your ScamScan homepage, you could fill it out like this:
 
 ### 6.2 Checks
 
-- [ ] Both pages have exactly one `h1` and headings in order
-- [ ] Both pages have the viewport meta tag and a unique `<title>`
+- [x] Both pages have exactly one `h1` and headings in order
+- [x] Both pages have the viewport meta tag and a unique `<title>`
 - [ ] The `nav` links to both pages and marks the current one with `class="active"`
-- [ ] There is a list of repeated items, each an `article`
+- [x] There is a list of repeated items, each an `article`
 - [ ] The form has a `label`, `id` and `name` for every control
-- [ ] Informative images have real alt text and decorative ones use `alt=""`
-- [ ] No lorem ipsum anywhere
+- [x] Informative images have real alt text and decorative ones use `alt=""`
+- [x] No lorem ipsum anywhere
 - [ ] I used at least one absolute, one relative and one same-page link
 
 ### 6.3 Validator results
 
-- **Home page:** screenshot `screenshots/home-validation.png`
-- **Core page:** screenshot `screenshots/core-validation.png`
+- **Home page:** screenshot `docs/milestone-one/validation/homeResults.png`
+- **Core page:** screenshot `docs/milestone-one/validation/playEmailResults.png`
 
-**Errors I met and fixed (at least one):** YOUR ANSWER HERE
+**Errors I met and fixed (at least one):**
+
+| Page                            | Errors | Warnings | Describe Errors / Warnings                                                                                                                                                                                                                                                                                                                                                                                                                     | Resolved?                                                                                                                             |
+| ------------------------------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Home Page (/)                   | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).<br>                                                                                                                                                                                                                                                                                                               | Yes                                                                                                                                   |
+| About Page (/about)             | 0      | 0        | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                            | N/A                                                                                                                                   |
+| Learn Page (/learn)             | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                                                                                   | Yes                                                                                                                                   |
+| Learn Email Page (/learn/email) | 0      | 2        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).<br>The warning was that a `section` element did not contain a heading (`h2`-`h6`) to identify its content. If no heading was needed, the validator suggested using a `div` instead.                                                                                                                               | Yes                                                                                                                                   |
+| Play Page (/play)               | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                                                                                   | Yes                                                                                                                                   |
+| Play Email Page (/play/email)   | 0      | 1        | This warning means that at least one `<article>` element does not contain a heading (`h2` through `h6`) identifying its content.                                                                                                                                                                                                                                                                                                               |                                                                                                                                       |
+| Header and Footer               | 3      | 1        | The warning was that the `html` element was missing a `lang` attribute to declare the language of the document.<br>The error was that the document's head element was missing a required title element.<br>The error was that the HTML document was missing the <!DOCTYPE html> declaration at the beginning.<br>The error was that the document did not declare its character encoding, causing the validator to default to windows-1252.<br> | No. `header.html` nor `footer.html`aren't meant to be accessed on their own. They attach themselves to other pages as components.<br> |     |
 
 ---
 
@@ -346,10 +354,10 @@ For your ScamScan homepage, you could fill it out like this:
 
 > Compare the finished pages with your wireframes.
 
-| Page      | What matches | What changed, and why |
-| --------- | ------------ | --------------------- |
-| Home      |              |                       |
-| Core page |              |                       |
+| Page                   | What matches                                                                                                                                                             | What changed, and why                                                                                                                                                                                       |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home                   | The overall layout, navigation, and content sections remained consistent with the original wireframe.                                                                    | No significant changes were made. The homepage was intentionally kept simple, serving as a gateway to the Learn and Play modules.                                                                           |
+| Core page (Play Email) | The overall desktop structure remained the same. The left side contains the inbox, while the right side contains a top bar with actions and the email contents below it. | The interface was significantly simplified to make it easier to navigate and use. Particular attention was given to the mobile layout, making the experience more responsive and usable on smaller screens. |
 
 ### 7.2 Checks
 
