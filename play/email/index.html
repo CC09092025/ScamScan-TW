@@ -17,45 +17,38 @@
     </script>
   </head>
 
-  <body
-    class="flex min-h-screen flex-col bg-stone-50 text-stone-800 transition-colors dark:bg-[#171615] dark:text-stone-200"
-  >
+  <body class="bg-bg text-text flex min-h-screen flex-col transition-colors">
     <!-- Header -->
-    <div
-      id="header"
-      class="min-h-20 border-b border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
-    ></div>
+    <div id="header" class="border-border bg-surface min-h-20 border-b"></div>
 
     <!-- Main layout -->
     <main
-      class="mx-auto mt-6 flex w-full max-w-7xl flex-1 flex-col gap-4 px-4 pb-6 sm:mt-8 sm:px-6 lg:flex-row lg:gap-6"
+      class="max-w-page mx-auto mt-6 flex w-full flex-1 flex-col gap-4 px-4 pb-6 sm:mt-8 sm:px-6 lg:flex-row lg:gap-6"
     >
       <!-- Inbox sidebar -->
       <aside
         id="inbox"
-        class="flex max-h-64 w-full shrink-0 flex-col overflow-hidden rounded-xl border border-stone-200 bg-white sm:max-h-72 lg:max-h-none lg:w-1/3 lg:max-w-sm dark:border-stone-800 dark:bg-[#201e1c]"
+        class="rounded-card border-border bg-surface flex max-h-64 w-full shrink-0 flex-col overflow-hidden border sm:max-h-72 lg:max-h-none lg:w-1/3 lg:max-w-sm"
       >
         <!-- Inbox heading -->
-        <div class="border-b border-stone-200 p-4 sm:p-5 dark:border-stone-800">
+        <div class="border-border border-b p-4 sm:p-5">
           <h1 class="text-lg font-semibold">Inbox</h1>
-          <p class="mt-1 text-sm text-stone-500 dark:text-stone-400">
-            Your available scenarios
-          </p>
+          <p class="text-muted mt-1 text-sm">Your available scenarios</p>
         </div>
 
         <!-- Email list -->
         <div
           id="inbox-list"
-          class="min-h-0 flex-1 divide-y divide-stone-200 overflow-y-auto dark:divide-stone-800"
+          class="divide-border min-h-0 flex-1 divide-y overflow-y-auto"
         >
           <!-- Scenario 1 -->
           <a
             href="#scenario-1"
             id="scenario-1"
-            class="flex items-center gap-3 bg-stone-100 px-4 py-3 sm:px-5 sm:py-4 dark:bg-stone-800"
+            class="bg-surface-muted flex items-center gap-3 px-4 py-3 sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-blue-500"
+              class="rounded-pill bg-status-unplayed size-2.5 shrink-0"
               title="Not completed"
             ></span>
 
@@ -63,9 +56,7 @@
               <h2 class="truncate text-sm font-semibold">
                 Suspicious Job Offer
               </h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 An unexpected employment opportunity in your inbox.
               </p>
             </div>
@@ -75,10 +66,10 @@
           <a
             href="#scenario-2"
             id="scenario-2"
-            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+            class="hover:bg-bg flex items-center gap-3 px-4 py-3 transition-colors sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-purple-500"
+              class="rounded-pill bg-status-passed size-2.5 shrink-0"
               title="Completed successfully"
             ></span>
 
@@ -86,9 +77,7 @@
               <h2 class="truncate text-sm font-medium">
                 Investment Opportunity
               </h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 An investment promising unusually high returns.
               </p>
             </div>
@@ -98,18 +87,16 @@
           <a
             href="#scenario-3"
             id="scenario-3"
-            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+            class="hover:bg-bg flex items-center gap-3 px-4 py-3 transition-colors sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-green-500"
+              class="rounded-pill bg-status-missed size-2.5 shrink-0"
               title="Suspicious items missed"
             ></span>
 
             <div class="min-w-0 flex-1">
               <h2 class="truncate text-sm font-medium">QR Code Payment</h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 A QR code requesting payment information.
               </p>
             </div>
@@ -119,18 +106,16 @@
           <a
             href="#scenario-4"
             id="scenario-4"
-            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+            class="hover:bg-bg flex items-center gap-3 px-4 py-3 transition-colors sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-red-500"
+              class="rounded-pill bg-status-failed size-2.5 shrink-0"
               title="Incorrect selections"
             ></span>
 
             <div class="min-w-0 flex-1">
               <h2 class="truncate text-sm font-medium">Account Verification</h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 A message asking you to verify your account credentials.
               </p>
             </div>
@@ -138,33 +123,39 @@
         </div>
 
         <!-- Status legend -->
-        <div
-          class="hidden border-t border-stone-200 p-5 lg:block dark:border-stone-800"
-        >
+        <div class="border-border hidden border-t p-5 lg:block">
           <h3
-            class="mb-3 text-xs font-semibold tracking-wide text-stone-500 uppercase"
+            class="text-muted mb-3 text-xs font-semibold tracking-wide uppercase"
           >
             Status legend
           </h3>
 
-          <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+          <ul class="text-muted space-y-2.5 text-xs">
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-blue-500"></span>
+              <span
+                class="rounded-pill bg-status-unplayed size-2 shrink-0"
+              ></span>
               Not completed
             </li>
 
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-purple-500"></span>
+              <span
+                class="rounded-pill bg-status-passed size-2 shrink-0"
+              ></span>
               Completed successfully
             </li>
 
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-green-500"></span>
+              <span
+                class="rounded-pill bg-status-missed size-2 shrink-0"
+              ></span>
               Suspicious items missed
             </li>
 
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-red-500"></span>
+              <span
+                class="rounded-pill bg-status-failed size-2 shrink-0"
+              ></span>
               Incorrect selections
             </li>
           </ul>
@@ -179,7 +170,7 @@
         <!-- Email toolbar -->
         <div
           id="email-toolbar"
-          class="flex min-h-16 flex-wrap items-center justify-between gap-3 rounded-xl border border-stone-200 bg-white px-4 py-3 sm:px-5 dark:border-stone-800 dark:bg-[#201e1c]"
+          class="rounded-card border-border bg-surface flex min-h-16 flex-wrap items-center justify-between gap-3 border px-4 py-3 sm:px-5"
         >
           <span class="text-sm font-semibold">Email Preview</span>
 
@@ -187,7 +178,7 @@
             <button
               id="email-scam"
               type="button"
-              class="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-600 transition-colors hover:bg-red-100 sm:px-4 dark:border-red-900 dark:bg-red-950/30 dark:text-red-400 dark:hover:bg-red-950/60"
+              class="btn-danger rounded-control px-3 py-2 text-sm font-medium transition-colors sm:px-4"
             >
               Scam
             </button>
@@ -195,7 +186,7 @@
             <button
               id="email-safe"
               type="button"
-              class="rounded-lg border border-green-200 bg-green-50 px-3 py-2 text-sm font-medium text-green-600 transition-colors hover:bg-green-100 sm:px-4 dark:border-green-900 dark:bg-green-950/30 dark:text-green-400 dark:hover:bg-green-950/60"
+              class="rounded-control border-play-border bg-play-soft text-play-text hover:bg-play-tint border px-3 py-2 text-sm font-medium transition-colors sm:px-4"
             >
               Safe
             </button>
@@ -203,7 +194,7 @@
             <button
               id="email-confirm"
               type="button"
-              class="rounded-lg bg-stone-800 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-stone-700 sm:px-4 dark:bg-stone-200 dark:text-stone-900 dark:hover:bg-white"
+              class="btn-inverse rounded-control px-3 py-2 text-sm font-medium transition-colors sm:px-4"
             >
               Confirm
             </button>
@@ -213,12 +204,10 @@
         <!-- Email content -->
         <div
           id="email-content"
-          class="flex flex-1 flex-col rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
+          class="rounded-card border-border bg-surface flex flex-1 flex-col border"
         >
           <!-- Email header -->
-          <div
-            class="border-b border-stone-200 p-4 sm:p-6 dark:border-stone-800"
-          >
+          <div class="border-border sm:p-card border-b p-4">
             <!-- Subject -->
             <h2
               id="email-subject"
@@ -232,7 +221,7 @@
               <!-- Sender avatar -->
               <div
                 id="email-avatar"
-                class="flex size-10 shrink-0 items-center justify-center rounded-full bg-stone-200 text-sm font-semibold text-stone-600 dark:bg-stone-700 dark:text-stone-300"
+                class="rounded-pill bg-border text-muted flex size-10 shrink-0 items-center justify-center text-sm font-semibold"
               >
                 ?
               </div>
@@ -244,22 +233,19 @@
                     Sender Name
                   </p>
 
-                  <span
-                    id="email-timestamp"
-                    class="text-xs text-stone-500 dark:text-stone-400"
-                  >
+                  <span id="email-timestamp" class="text-muted text-xs">
                     Date and Time
                   </span>
                 </div>
 
                 <p
                   id="email-sender-address"
-                  class="mt-1 text-xs break-all text-stone-500 dark:text-stone-400"
+                  class="text-muted mt-1 text-xs break-all"
                 >
                   sender@example.com
                 </p>
 
-                <p class="mt-1 text-xs text-stone-500 dark:text-stone-400">
+                <p class="text-muted mt-1 text-xs">
                   To:
                   <span id="email-recipient">recipient@example.com</span>
                 </p>
@@ -268,7 +254,7 @@
           </div>
 
           <!-- Email body -->
-          <article class="flex-1 p-4 sm:p-6">
+          <article class="sm:p-card flex-1 p-4">
             <div id="email-body" class="max-w-3xl space-y-5 text-sm leading-7">
               <p id="email-greeting">Hello Recipient,</p>
 
@@ -286,33 +272,26 @@
           <!-- Email signature -->
           <div
             id="email-signature"
-            class="border-t border-stone-200 p-4 sm:p-6 dark:border-stone-800"
+            class="border-border sm:p-card border-t p-4"
           >
             <p>Best regards,</p>
 
             <p id="email-signature-name" class="font-semibold">Sender Name</p>
 
-            <p
-              id="email-signature-company"
-              class="text-stone-500 dark:text-stone-400"
-            >
-              Company Name
-            </p>
+            <p id="email-signature-company" class="text-muted">Company Name</p>
           </div>
 
           <!-- Attachments -->
           <div
             id="email-attachments"
-            class="border-t border-stone-200 p-4 sm:p-6 dark:border-stone-800"
+            class="border-border sm:p-card border-t p-4"
           >
-            <p class="mb-3 text-xs font-semibold text-stone-500 uppercase">
+            <p class="text-muted mb-3 text-xs font-semibold uppercase">
               Attachments
             </p>
 
             <div id="email-attachment-list">
-              <p class="text-sm text-stone-400 dark:text-stone-500">
-                No attachments
-              </p>
+              <p class="text-muted text-sm">No attachments</p>
             </div>
           </div>
         </div>

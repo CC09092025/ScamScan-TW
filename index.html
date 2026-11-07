@@ -17,28 +17,23 @@
     </script>
   </head>
 
-  <body
-    class="flex min-h-screen flex-col bg-stone-50 text-stone-800 transition-colors dark:bg-[#171615] dark:text-stone-200"
-  >
-    <div
-      id="header"
-      class="min-h-20 border-b border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
-    ></div>
+  <body class="bg-bg text-text flex min-h-screen flex-col transition-colors">
+    <div id="header" class="border-border bg-surface min-h-20 border-b"></div>
 
-    <main class="mx-auto mt-10 w-full max-w-7xl flex-1 space-y-16">
+    <main class="max-w-page space-y-section mx-auto mt-10 w-full flex-1">
       <!-- Hero -->
       <section
-        class="grid min-h-100 grid-cols-[1.1fr_0.9fr] items-center gap-16 px-8 max-md:grid-cols-1"
+        class="px-page grid min-h-100 grid-cols-[1.1fr_0.9fr] items-center gap-16 max-md:grid-cols-1"
       >
         <div
           class="mx-auto w-full max-w-xl space-y-6 text-left max-md:text-center"
         >
           <div class="space-y-3">
-            <h2 class="text-5xl font-bold text-stone-900 dark:text-white">
+            <h2 class="text-h1 text-primary font-bold">
               Would you fall for it?
             </h2>
 
-            <p class="text-lg text-stone-600 dark:text-stone-400">
+            <p class="text-muted text-lg">
               Read real-looking emails, texts, pop-ups, and calls. Decide what's
               a scam and what's legit, then find out what gave it away.
             </p>
@@ -47,17 +42,9 @@
           <div
             class="flex justify-start gap-4 max-md:flex-col max-md:justify-center"
           >
-            <a
-              href="/play/"
-              class="rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-700 dark:bg-orange-500 dark:hover:bg-orange-400 dark:hover:text-stone-950"
-            >
-              Start Playing
-            </a>
+            <a href="/play/" class="btn-primary"> Start Playing </a>
 
-            <a
-              href="/learn/"
-              class="rounded-lg border-2 border-stone-300 bg-white px-6 py-3 font-semibold text-stone-800 transition-colors hover:border-stone-400 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:border-stone-600 dark:hover:bg-stone-800"
-            >
+            <a href="/learn/" class="btn-secondary">
               Learn How to Avoid Scams
             </a>
           </div>
@@ -66,29 +53,25 @@
         <!-- Hero illustration placeholder -->
         <div class="flex items-center justify-center max-md:order-first">
           <div
-            class="aspect-square w-80 rounded-2xl border border-orange-200 bg-orange-100 dark:border-orange-900/60 dark:bg-orange-950/40"
+            class="rounded-card border-learn-border bg-learn-tint aspect-square w-80 border"
           ></div>
         </div>
       </section>
 
       <!-- Categories -->
-      <section class="px-8 text-left">
-        <h2 class="mb-3 text-3xl font-semibold text-stone-900 dark:text-white">
+      <section class="px-page text-left">
+        <h2 class="text-h2 text-primary mb-3 font-semibold">
           Practice one type at a time
         </h2>
 
-        <h3
-          class="mb-3 text-2xl font-semibold text-stone-800 dark:text-stone-200"
-        >
-          Learn
-        </h3>
+        <h3 class="text-h3 text-text mb-3 font-semibold">Learn</h3>
 
         <ul
           class="category-list-learn flex list-none flex-wrap gap-x-3 gap-y-6 max-lg:justify-center"
         >
           <li>
             <a href="/learn/email/"
-              ><i data-lucide="Mail" class="mr-3 h-6 w-6 text-orange-500"></i
+              ><i data-lucide="Mail" class="text-learn mr-3 h-6 w-6"></i
               >Email</a
             >
           </li>
@@ -96,7 +79,7 @@
             <a href="/learn/text-messages/"
               ><i
                 data-lucide="MessageSquareDot"
-                class="mr-3 h-6 w-6 text-orange-500"
+                class="text-learn mr-3 h-6 w-6"
               ></i
               >Text Messages</a
             >
@@ -105,32 +88,26 @@
             <a href="/learn/pop-ups/"
               ><i
                 data-lucide="CircleExclamationPoint"
-                class="mr-3 h-6 w-6 text-orange-500"
+                class="text-learn mr-3 h-6 w-6"
               ></i
               >Pop-ups</a
             >
           </li>
           <li>
             <a href="/learn/phone-calls/"
-              ><i data-lucide="Phone" class="mr-3 h-6 w-6 text-orange-500"></i
-              >Phone calls</a
+              ><i data-lucide="Phone" class="text-learn mr-3 h-6 w-6"></i>Phone
+              calls</a
             >
           </li>
           <li>
             <a href="/learn/social-media/"
-              ><i
-                data-lucide="Smartphone"
-                class="mr-3 h-6 w-6 text-orange-500"
-              ></i
+              ><i data-lucide="Smartphone" class="text-learn mr-3 h-6 w-6"></i
               >Social media DMs</a
             >
           </li>
           <li>
             <a href="/learn/online-listings/"
-              ><i
-                data-lucide="ShoppingCart"
-                class="mr-3 h-6 w-6 text-orange-500"
-              ></i
+              ><i data-lucide="ShoppingCart" class="text-learn mr-3 h-6 w-6"></i
               >Online listings</a
             >
           </li>
@@ -138,7 +115,7 @@
             <a href="/learn/job-offers/"
               ><i
                 data-lucide="BriefcaseBusiness"
-                class="mr-3 h-6 w-6 text-orange-500"
+                class="text-learn mr-3 h-6 w-6"
               ></i
               >Job offers</a
             >
@@ -147,39 +124,34 @@
             <a href="/learn/investments/"
               ><i
                 data-lucide="ChartNoAxesCombined"
-                class="mr-3 h-6 w-6 text-orange-500"
+                class="text-learn mr-3 h-6 w-6"
               ></i
               >Investments</a
             >
           </li>
           <li>
             <a href="/learn/qr-codes/"
-              ><i data-lucide="QrCode" class="mr-3 h-6 w-6 text-orange-500"></i
-              >QR codes</a
+              ><i data-lucide="QrCode" class="text-learn mr-3 h-6 w-6"></i>QR
+              codes</a
             >
           </li>
         </ul>
 
-        <h3
-          class="my-3 text-2xl font-semibold text-stone-800 dark:text-stone-200"
-        >
-          Play
-        </h3>
+        <h3 class="text-h3 text-text my-3 font-semibold">Play</h3>
 
         <ul
           class="category-list-play flex list-none flex-wrap gap-x-3 gap-y-6 max-lg:justify-center"
         >
           <li>
             <a href="/play/email/"
-              ><i data-lucide="Mail" class="mr-3 h-6 w-6 text-green-500"></i
-              >Email</a
+              ><i data-lucide="Mail" class="text-play mr-3 h-6 w-6"></i>Email</a
             >
           </li>
           <li>
             <a href="/play/text-messages/"
               ><i
                 data-lucide="MessageSquareDot"
-                class="mr-3 h-6 w-6 text-green-500"
+                class="text-play mr-3 h-6 w-6"
               ></i
               >Text Messages</a
             >
@@ -188,32 +160,26 @@
             <a href="/play/pop-ups/"
               ><i
                 data-lucide="CircleExclamationPoint"
-                class="mr-3 h-6 w-6 text-green-500"
+                class="text-play mr-3 h-6 w-6"
               ></i
               >Pop-ups</a
             >
           </li>
           <li>
             <a href="/play/phone-calls/"
-              ><i data-lucide="Phone" class="mr-3 h-6 w-6 text-green-500"></i
-              >Phone calls</a
+              ><i data-lucide="Phone" class="text-play mr-3 h-6 w-6"></i>Phone
+              calls</a
             >
           </li>
           <li>
             <a href="/play/social-media/"
-              ><i
-                data-lucide="Smartphone"
-                class="mr-3 h-6 w-6 text-green-500"
-              ></i
+              ><i data-lucide="Smartphone" class="text-play mr-3 h-6 w-6"></i
               >Social media DMs</a
             >
           </li>
           <li>
             <a href="/play/online-listings/"
-              ><i
-                data-lucide="ShoppingCart"
-                class="mr-3 h-6 w-6 text-green-500"
-              ></i
+              ><i data-lucide="ShoppingCart" class="text-play mr-3 h-6 w-6"></i
               >Online listings</a
             >
           </li>
@@ -221,7 +187,7 @@
             <a href="/play/job-offers/"
               ><i
                 data-lucide="BriefcaseBusiness"
-                class="mr-3 h-6 w-6 text-green-500"
+                class="text-play mr-3 h-6 w-6"
               ></i
               >Job offers</a
             >
@@ -230,23 +196,23 @@
             <a href="/play/investments/"
               ><i
                 data-lucide="ChartNoAxesCombined"
-                class="mr-3 h-6 w-6 text-green-500"
+                class="text-play mr-3 h-6 w-6"
               ></i
               >Investments</a
             >
           </li>
           <li>
             <a href="/play/qr-codes/"
-              ><i data-lucide="QrCode" class="mr-3 h-6 w-6 text-green-500"></i
-              >QR codes</a
+              ><i data-lucide="QrCode" class="text-play mr-3 h-6 w-6"></i>QR
+              codes</a
             >
           </li>
         </ul>
       </section>
 
       <!-- How it works -->
-      <section class="px-8 pb-12 text-left">
-        <h2 class="mb-6 text-3xl font-semibold text-stone-900 dark:text-white">
+      <section class="px-page pb-12 text-left">
+        <h2 class="text-h2 text-primary mb-6 font-semibold">
           How a round works
         </h2>
 

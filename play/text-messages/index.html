@@ -17,45 +17,38 @@
     </script>
   </head>
 
-  <body
-    class="flex min-h-screen flex-col bg-stone-50 text-stone-800 transition-colors dark:bg-[#171615] dark:text-stone-200"
-  >
+  <body class="bg-bg text-text flex min-h-screen flex-col transition-colors">
     <!-- Header -->
-    <div
-      id="header"
-      class="min-h-20 border-b border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
-    ></div>
+    <div id="header" class="border-border bg-surface min-h-20 border-b"></div>
 
     <!-- Main layout -->
     <main
-      class="mx-auto mt-6 flex w-full max-w-7xl flex-1 flex-col gap-4 px-4 pb-6 sm:mt-8 sm:px-6 lg:flex-row lg:gap-6"
+      class="max-w-page mx-auto mt-6 flex w-full flex-1 flex-col gap-4 px-4 pb-6 sm:mt-8 sm:px-6 lg:flex-row lg:gap-6"
     >
       <!-- Scenario sidebar -->
       <aside
         id="inbox"
-        class="flex max-h-64 w-full shrink-0 flex-col overflow-hidden rounded-xl border border-stone-200 bg-white sm:max-h-72 lg:max-h-none lg:w-1/3 lg:max-w-sm dark:border-stone-800 dark:bg-[#201e1c]"
+        class="rounded-card border-border bg-surface flex max-h-64 w-full shrink-0 flex-col overflow-hidden border sm:max-h-72 lg:max-h-none lg:w-1/3 lg:max-w-sm"
       >
         <!-- Inbox heading -->
-        <div class="border-b border-stone-200 p-4 sm:p-5 dark:border-stone-800">
+        <div class="border-border border-b p-4 sm:p-5">
           <h1 class="text-lg font-semibold">Messages</h1>
-          <p class="mt-1 text-sm text-stone-500 dark:text-stone-400">
-            Your available scenarios
-          </p>
+          <p class="text-muted mt-1 text-sm">Your available scenarios</p>
         </div>
 
         <!-- Scenario list -->
         <div
           id="inbox-list"
-          class="min-h-0 flex-1 divide-y divide-stone-200 overflow-y-auto dark:divide-stone-800"
+          class="divide-border min-h-0 flex-1 divide-y overflow-y-auto"
         >
           <!-- Scenario 1 -->
           <a
             href="#scenario-1"
             id="scenario-1"
-            class="flex items-center gap-3 bg-stone-100 px-4 py-3 sm:px-5 sm:py-4 dark:bg-stone-800"
+            class="bg-surface-muted flex items-center gap-3 px-4 py-3 sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-blue-500"
+              class="rounded-pill bg-status-unplayed size-2.5 shrink-0"
               title="Not completed"
             ></span>
 
@@ -63,9 +56,7 @@
               <h2 class="truncate text-sm font-semibold">
                 Fake Delivery Notice
               </h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 A courier requests a small fee to deliver your package.
               </p>
             </div>
@@ -75,10 +66,10 @@
           <a
             href="#scenario-2"
             id="scenario-2"
-            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+            class="hover:bg-bg flex items-center gap-3 px-4 py-3 transition-colors sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-purple-500"
+              class="rounded-pill bg-status-passed size-2.5 shrink-0"
               title="Completed successfully"
             ></span>
 
@@ -86,9 +77,7 @@
               <h2 class="truncate text-sm font-medium">
                 Suspicious Bank Alert
               </h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 A message claims your bank account has been locked.
               </p>
             </div>
@@ -98,18 +87,16 @@
           <a
             href="#scenario-3"
             id="scenario-3"
-            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+            class="hover:bg-bg flex items-center gap-3 px-4 py-3 transition-colors sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-green-500"
+              class="rounded-pill bg-status-missed size-2.5 shrink-0"
               title="Suspicious items missed"
             ></span>
 
             <div class="min-w-0 flex-1">
               <h2 class="truncate text-sm font-medium">Unexpected Prize</h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 You have supposedly won a prize you never entered for.
               </p>
             </div>
@@ -119,10 +106,10 @@
           <a
             href="#scenario-4"
             id="scenario-4"
-            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+            class="hover:bg-bg flex items-center gap-3 px-4 py-3 transition-colors sm:px-5 sm:py-4"
           >
             <span
-              class="size-2.5 shrink-0 rounded-full bg-red-500"
+              class="rounded-pill bg-status-failed size-2.5 shrink-0"
               title="Incorrect selections"
             ></span>
 
@@ -130,9 +117,7 @@
               <h2 class="truncate text-sm font-medium">
                 Safe Verification Code
               </h2>
-              <p
-                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p class="text-muted mt-1 truncate text-xs">
                 A legitimate one-time verification message.
               </p>
             </div>
@@ -140,33 +125,39 @@
         </div>
 
         <!-- Status legend -->
-        <div
-          class="hidden border-t border-stone-200 p-5 lg:block dark:border-stone-800"
-        >
+        <div class="border-border hidden border-t p-5 lg:block">
           <h3
-            class="mb-3 text-xs font-semibold tracking-wide text-stone-500 uppercase"
+            class="text-muted mb-3 text-xs font-semibold tracking-wide uppercase"
           >
             Status legend
           </h3>
 
-          <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+          <ul class="text-muted space-y-2.5 text-xs">
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-blue-500"></span>
+              <span
+                class="rounded-pill bg-status-unplayed size-2 shrink-0"
+              ></span>
               Not completed
             </li>
 
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-purple-500"></span>
+              <span
+                class="rounded-pill bg-status-passed size-2 shrink-0"
+              ></span>
               Completed successfully
             </li>
 
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-green-500"></span>
+              <span
+                class="rounded-pill bg-status-missed size-2 shrink-0"
+              ></span>
               Suspicious items missed
             </li>
 
             <li class="flex items-center gap-2.5">
-              <span class="size-2 shrink-0 rounded-full bg-red-500"></span>
+              <span
+                class="rounded-pill bg-status-failed size-2 shrink-0"
+              ></span>
               Incorrect selections
             </li>
           </ul>
@@ -181,7 +172,7 @@
         <!-- Message toolbar -->
         <div
           id="message-toolbar"
-          class="flex min-h-16 flex-wrap items-center justify-between gap-3 rounded-xl border border-stone-200 bg-white px-4 py-3 sm:px-5 dark:border-stone-800 dark:bg-[#201e1c]"
+          class="rounded-card border-border bg-surface flex min-h-16 flex-wrap items-center justify-between gap-3 border px-4 py-3 sm:px-5"
         >
           <span class="text-sm font-semibold">Text Message Preview</span>
 
@@ -189,7 +180,7 @@
             <button
               id="message-scam"
               type="button"
-              class="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-600 transition-colors hover:bg-red-100 sm:px-4 dark:border-red-900 dark:bg-red-950/30 dark:text-red-400 dark:hover:bg-red-950/60"
+              class="btn-danger rounded-control px-3 py-2 text-sm font-medium transition-colors sm:px-4"
             >
               Scam
             </button>
@@ -197,7 +188,7 @@
             <button
               id="message-safe"
               type="button"
-              class="rounded-lg border border-green-200 bg-green-50 px-3 py-2 text-sm font-medium text-green-600 transition-colors hover:bg-green-100 sm:px-4 dark:border-green-900 dark:bg-green-950/30 dark:text-green-400 dark:hover:bg-green-950/60"
+              class="rounded-control border-play-border bg-play-soft text-play-text hover:bg-play-tint border px-3 py-2 text-sm font-medium transition-colors sm:px-4"
             >
               Safe
             </button>
@@ -205,7 +196,7 @@
             <button
               id="message-confirm"
               type="button"
-              class="rounded-lg bg-stone-800 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-stone-700 sm:px-4 dark:bg-stone-200 dark:text-stone-900 dark:hover:bg-white"
+              class="btn-inverse rounded-control px-3 py-2 text-sm font-medium transition-colors sm:px-4"
             >
               Confirm
             </button>
@@ -215,16 +206,16 @@
         <!-- Message content -->
         <div
           id="message-content"
-          class="flex flex-1 flex-col overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
+          class="rounded-card border-border bg-surface flex flex-1 flex-col overflow-hidden border"
         >
           <!-- Phone header -->
           <div
-            class="flex items-center gap-3 border-b border-stone-200 p-4 sm:p-6 dark:border-stone-800"
+            class="border-border sm:p-card flex items-center gap-3 border-b p-4"
           >
             <!-- Sender avatar -->
             <div
               id="message-avatar"
-              class="flex size-10 shrink-0 items-center justify-center rounded-full bg-stone-200 text-sm font-semibold text-stone-600 dark:bg-stone-700 dark:text-stone-300"
+              class="rounded-pill bg-border text-muted flex size-10 shrink-0 items-center justify-center text-sm font-semibold"
             >
               ?
             </div>
@@ -235,18 +226,12 @@
                 Sender Name
               </p>
 
-              <p
-                id="message-sender-number"
-                class="mt-1 text-xs text-stone-500 dark:text-stone-400"
-              >
+              <p id="message-sender-number" class="text-muted mt-1 text-xs">
                 +1 (000) 000-0000
               </p>
             </div>
 
-            <span
-              id="message-timestamp"
-              class="text-xs text-stone-500 dark:text-stone-400"
-            >
+            <span id="message-timestamp" class="text-muted text-xs">
               Today
             </span>
           </div>
@@ -254,13 +239,11 @@
           <!-- Conversation -->
           <div
             id="message-conversation"
-            class="flex flex-1 flex-col gap-4 overflow-y-auto bg-stone-50 p-4 sm:p-6 dark:bg-[#171615]"
+            class="bg-bg sm:p-card flex flex-1 flex-col gap-4 overflow-y-auto p-4"
           >
             <!-- Date separator -->
             <div class="flex justify-center">
-              <span
-                class="rounded-full bg-stone-200 px-3 py-1 text-xs text-stone-500 dark:bg-stone-800 dark:text-stone-400"
-              >
+              <span class="rounded-pill bg-border text-muted px-3 py-1 text-xs">
                 Today
               </span>
             </div>
@@ -269,13 +252,13 @@
             <div class="flex justify-start">
               <div
                 id="message-bubble"
-                class="max-w-[85%] rounded-2xl rounded-bl-sm border border-stone-200 bg-white px-4 py-3 text-sm leading-6 wrap-break-word shadow-sm sm:max-w-[75%] dark:border-stone-800 dark:bg-[#201e1c]"
+                class="rounded-card border-border bg-surface max-w-[85%] rounded-bl-sm border px-4 py-3 text-sm leading-6 wrap-break-word shadow-sm sm:max-w-[75%]"
               >
                 <p id="message-text">Your message content will appear here.</p>
 
                 <span
                   id="message-time"
-                  class="mt-2 block text-right text-xs text-stone-400 dark:text-stone-500"
+                  class="text-muted mt-2 block text-right text-xs"
                 >
                   10:42 AM
                 </span>
@@ -284,18 +267,16 @@
           </div>
 
           <!-- Message input preview -->
-          <div
-            class="border-t border-stone-200 p-4 sm:p-5 dark:border-stone-800"
-          >
+          <div class="border-border border-t p-4 sm:p-5">
             <div class="flex items-center gap-3">
               <div
-                class="flex-1 rounded-full border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-400 dark:border-stone-800 dark:bg-[#171615]"
+                class="rounded-pill border-border bg-bg text-muted flex-1 border px-4 py-3 text-sm"
               >
                 Text message
               </div>
 
               <div
-                class="flex size-10 shrink-0 items-center justify-center rounded-full bg-stone-200 text-stone-500 dark:bg-stone-700 dark:text-stone-300"
+                class="rounded-pill bg-border text-muted flex size-10 shrink-0 items-center justify-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

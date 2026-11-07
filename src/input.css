@@ -2,50 +2,200 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme static {
+  --color-bg: #fafaf9;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f5f5f4;
+  --color-text: #292524;
+  --color-primary: #1c1917;
+  --color-muted: #78716c;
+  --color-border: #e7e5e4;
+  --color-border-strong: #d6d3d1;
+  --color-accent: #ea580c;
+  --color-accent-dark: #c2410c;
+  --color-on-accent: #ffffff;
+
+  --color-learn: #f97316;
+  --color-learn-soft: #fff7ed;
+  --color-learn-text: #c2410c;
+  --color-learn-border: #fdba74;
+  --color-learn-tint: #ffedd5;
+  --color-play: #22c55e;
+  --color-play-soft: #f0fdf4;
+  --color-play-text: #15803d;
+  --color-play-border: #86efac;
+  --color-play-tint: #dcfce7;
+
+  --color-danger: #dc2626;
+  --color-danger-soft: #fef2f2;
+  --color-danger-soft-hover: #fee2e2;
+  --color-danger-border: #fecaca;
+  --color-info: #2563eb;
+  --color-info-strong: #1e40af;
+  --color-info-soft: #eff6ff;
+  --color-info-border: #bfdbfe;
+
+  --color-status-unplayed: #3b82f6;
+  --color-status-passed: #a855f7;
+  --color-status-missed: #22c55e;
+  --color-status-failed: #ef4444;
+
+  --color-inverse: #292524;
+  --color-inverse-hover: #44403c;
+  --color-on-inverse: #ffffff;
+
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-heading: ui-sans-serif, system-ui, sans-serif;
+
+  --text-h1: 3rem;
+  --text-h1--line-height: 1;
+  --text-h2: 2rem;
+  --text-h2--line-height: 1.25;
+  --text-h3: 1.5rem;
+  --text-h3--line-height: 1.33;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+
+  --font-weight-heading: 700;
+
+  --spacing: 0.25rem;
+  --spacing-gutter: 2rem;
+  --spacing-section: 4rem;
+  --spacing-card: 1.5rem;
+  --spacing-control-x: 1.5rem;
+  --spacing-control-y: 0.75rem;
+  --spacing-chip-x: 1.1rem;
+  --spacing-chip-y: 0.6rem;
+
+  --container-page: 80rem;
+
+  --radius-control: 0.5rem;
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-card-hover:
+    0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --default-transition-duration: 200ms;
+}
+
+.dark {
+  --color-bg: #171615;
+  --color-surface: #201e1c;
+  --color-surface-muted: #292524;
+  --color-text: #e7e5e4;
+  --color-primary: #ffffff;
+  --color-muted: #a8a29e;
+  --color-border: #44403c;
+  --color-border-strong: #57534e;
+  --color-accent: #f97316;
+  --color-accent-dark: #fb923c;
+  --color-on-accent: #171615;
+
+  --color-learn-soft: rgb(67 20 7 / 0.4);
+  --color-learn-text: #fb923c;
+  --color-learn-border: #7c2d12;
+  --color-learn-tint: rgb(67 20 7 / 0.6);
+  --color-play-soft: rgb(5 46 22 / 0.4);
+  --color-play-text: #4ade80;
+  --color-play-border: #14532d;
+  --color-play-tint: rgb(5 46 22 / 0.6);
+
+  --color-danger: #f87171;
+  --color-danger-soft: rgb(69 10 10 / 0.3);
+  --color-danger-soft-hover: rgb(69 10 10 / 0.6);
+  --color-danger-border: #7f1d1d;
+  --color-info: #60a5fa;
+  --color-info-strong: #93c5fd;
+  --color-info-soft: rgb(23 37 84 / 0.2);
+  --color-info-border: #1e3a8a;
+
+  --color-inverse: #e7e5e4;
+  --color-inverse-hover: #ffffff;
+  --color-on-inverse: #1c1917;
+
+  --shadow-card-hover: 0 4px 6px -1px rgb(0 0 0 / 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-body text-text font-sans transition-colors;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+  }
+}
+
 @layer components {
+  .btn,
+  .btn-primary,
+  .btn-secondary {
+    @apply rounded-control px-control-x py-control-y inline-flex items-center justify-center font-semibold transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-on-accent hover:bg-accent-dark;
+  }
+
+  .btn-inverse {
+    @apply bg-inverse text-on-inverse hover:bg-inverse-hover;
+  }
+
+  .btn-danger {
+    @apply border-danger-border bg-danger-soft text-danger hover:bg-danger-soft-hover border;
+  }
+
+  .btn-secondary {
+    @apply border-border-strong bg-surface text-text hover:bg-surface-muted border-2;
+  }
+
+  .card {
+    @apply rounded-card border-border bg-surface p-card border;
+  }
+
+  .category-list-learn a,
+  .category-list-play a {
+    @apply rounded-pill border-border-strong bg-surface px-chip-x py-chip-y text-text flex flex-row border-2 border-solid font-medium transition-colors;
+  }
+
   .category-list-learn a {
-    @apply flex flex-row rounded-full border-2 border-solid border-stone-300 bg-white px-[1.1rem] py-[0.6rem] font-medium text-stone-800 transition-colors;
-    @apply hover:border-orange-500 hover:bg-orange-50 hover:text-orange-700;
-    @apply dark:border-stone-700 dark:bg-[#201e1c] dark:text-stone-300;
-    @apply dark:hover:border-orange-500 dark:hover:bg-orange-950/40 dark:hover:text-orange-400;
+    @apply hover:border-learn hover:bg-learn-soft hover:text-learn-text;
   }
 
   .category-list-play a {
-    @apply flex flex-row rounded-full border-2 border-solid border-stone-300 bg-white px-[1.1rem] py-[0.6rem] font-medium text-stone-800 transition-colors;
-    @apply hover:border-green-500 hover:bg-green-50 hover:text-green-700;
-    @apply dark:border-stone-700 dark:bg-[#201e1c] dark:text-stone-300;
-    @apply dark:hover:border-green-500 dark:hover:bg-green-950/40 dark:hover:text-green-400;
+    @apply hover:border-play hover:bg-play-soft hover:text-play-text;
+  }
+
+  .learn-modules li,
+  .play-modules li {
+    @apply rounded-card border-border bg-surface p-card shadow-card hover:shadow-card-hover border transition-all hover:-translate-y-1;
   }
 
   .learn-modules li {
-    @apply rounded-xl border border-stone-200 bg-white p-6 shadow-sm transition-all duration-200;
-    @apply hover:-translate-y-1 hover:border-orange-300 hover:shadow-md;
-    @apply dark:border-stone-800 dark:bg-[#201e1c];
-    @apply dark:hover:border-orange-900 dark:hover:shadow-black/20;
+    @apply hover:border-learn-border;
   }
 
   .play-modules li {
-    @apply rounded-xl border border-stone-200 bg-white p-6 shadow-sm transition-all duration-200;
-    @apply hover:-translate-y-1 hover:border-green-300 hover:shadow-md;
-    @apply dark:border-stone-800 dark:bg-[#201e1c];
-    @apply dark:hover:border-green-900 dark:hover:shadow-black/20;
+    @apply hover:border-play-border;
   }
 
   .steps-list li {
-    @apply rounded-xl border border-l-4 border-stone-200 border-l-orange-500 bg-white px-6 py-5 [counter-increment:step];
-    @apply dark:border-stone-800 dark:border-l-orange-500 dark:bg-[#201e1c];
+    @apply rounded-card border-border border-l-accent bg-surface px-card border border-l-4 py-5 [counter-increment:step];
   }
 
   .steps-list li::before {
     content: counter(step);
-    @apply text-2xl font-bold text-orange-600 dark:text-orange-500;
+    @apply text-h3 text-accent font-bold;
   }
 
   .steps-list li strong {
-    @apply text-stone-900 dark:text-stone-100;
+    @apply text-primary;
   }
 
   .steps-list li p {
-    @apply mt-2 text-stone-600 dark:text-stone-400;
+    @apply text-muted mt-2;
   }
 }

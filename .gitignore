@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Distribution Folder
+dist/
+
 # Generated Tailwind CSS
 css/output.css
 
