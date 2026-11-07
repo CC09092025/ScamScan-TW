@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="/css/output.css" />
 
+    <title>ScamScan — Email (Learn)</title>
+
     <script>
       const theme = localStorage.getItem("theme");
 
@@ -24,10 +26,1234 @@
     ></div>
 
     <main class="mx-auto mt-10 w-full max-w-7xl flex-1 space-y-16 px-8">
-      <section class="pb-12">
+      <section>
         <h2 class="mb-6 text-5xl font-bold text-stone-900 dark:text-white">
           Learn — Email
         </h2>
+        <p class="mb-2 text-base">
+          In 1971, Ray Tomlinson, a computer engineer at BBN Technologies,
+          modified message-sending programs for the ARPANET network to send
+          messages between different computers, introducing the @ symbol to
+          route messages to a specific host computer (user@host).
+        </p>
+        <p class="mb-2 text-base">
+          Today, while less common for casual online conversations, email
+          remains widely used for professional communication, business
+          correspondence, and formal inquiries. This gives email a high level of
+          perceived trustworthiness, making it an attractive medium for scammers
+          to deceive victims and exploit that trust.
+        </p>
+        <p class="mb-2 text-base">
+          While most popular email providers can now detect and filter scam and
+          phishing emails, they aren't always reliable. Just as legitimate
+          emails can be incorrectly flagged as spam, malicious emails can slip
+          through these filters and reach your inbox. Therefore, it is important
+          to know how to identify illegitimate emails without relying solely on
+          your email provider to get it right.
+        </p>
+      </section>
+
+      <section class="pb-16">
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              01
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Check the sender
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Always check who sent you an email before trusting its contents.
+            Scammers often impersonate legitimate companies, organizations, or
+            individuals by using display names and email addresses that look
+            convincing at first glance. Pay close attention to the actual email
+            address, particularly the domain name after the @ symbol. A familiar
+            display name does not necessarily mean the email came from a
+            legitimate sender.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples
+            </h4>
+
+            <div
+              class="space-y-2 rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60"
+            >
+              <div class="flex items-center justify-between">
+                <code class="text-sm">support@google.com</code>
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400"
+                >
+                  Legitimate
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <code class="text-sm">support@googIe.com</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                The lowercase "l" in Google has been replaced with an uppercase
+                "I", which can look similar in certain fonts.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <code class="text-sm">google-support@gmail.com</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                While gmail.com is a legitimate email provider, it would be
+                unusual for a company like Google to use a generic email
+                provider instead of its official domain.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <code class="text-sm">support@google.security-check.com</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                Although it may appear legitimate, the actual registered domain
+                is
+                <code>security-check.com</code>, <em>not</em>
+                <code>google.com</code>.
+              </p>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-green-200/70 bg-green-50/60 p-4 dark:border-green-900/40 dark:bg-green-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="thumbs-up"
+                class="size-4 text-green-600 dark:text-green-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-green-800 dark:text-green-300"
+              >
+                Recommendation
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              Refer to our tips for identifying suspicious URLs to help
+              determine whether an email sender's address is legitimate.
+            </p>
+          </aside>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              Although scammers may use deceptive domains to impersonate
+              legitimate businesses, they sometimes rely on victims assuming an
+              email is legitimate simply because it uses a familiar display
+              name. Instead, they may use random or unrelated email domains,
+              which are often cheaper to obtain. If the domain following the @
+              symbol looks unfamiliar or unrelated to the supposed sender, treat
+              the email with suspicion.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              02
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Be cautious of unexpected attachments
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Unexpected email attachments can contain malicious files designed to
+            infect your device, steal information, or install unwanted software.
+            Be especially cautious of unfamiliar file types, executable files,
+            and documents that ask you to enable macros. If you weren't
+            expecting an attachment, verify with the sender through another
+            communication method before opening it.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples
+            </h4>
+
+            <div
+              class="space-y-2 rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60"
+            >
+              <div class="flex items-center justify-between">
+                <code class="text-sm">Invoice_93821.pdf.exe</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                An executable file disguised as a PDF invoice. The file
+                extension is always the part of the filename that appears to the
+                right of the final <code>.</code>. Any extensions appearing
+                before it are simply part of the filename.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <code class="text-sm">Resume_Carter.docm</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                An unexpected Word document that may contain malicious macros.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <code class="text-sm">Package_Tracking.zip</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                An unexpected compressed attachment claiming to contain delivery
+                information.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <code class="text-sm">Payment_Receipt.html</code>
+                <span
+                  class="text-xs font-medium text-amber-600 dark:text-amber-400"
+                >
+                  Suspicious
+                </span>
+              </div>
+
+              <p class="text-xs text-stone-500 dark:text-stone-400">
+                An HTML attachment that could redirect you to a fraudulent login
+                page.
+              </p>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+
+            <p
+              class="mb-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              On Windows and macOS, displaying file extensions may be disabled
+              by default. To make sure you can see the complete filename and its
+              extension, follow the instructions for your operating system
+              below.
+            </p>
+
+            <div class="space-y-4">
+              <div>
+                <h5
+                  class="mb-2 flex items-center gap-2 text-sm font-semibold text-stone-800 dark:text-stone-200"
+                >
+                  <i data-lucide="grid-2x2" class="size-4"></i>
+                  Windows
+                </h5>
+
+                <ol
+                  class="list-decimal space-y-1 pl-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+                >
+                  <li>Open File Explorer.</li>
+                  <li>
+                    Access the folder options:
+                    <ul class="mt-1 list-disc space-y-1 pl-5">
+                      <li>
+                        <strong>Windows 11:</strong> Click the three dots
+                        (<code>...</code>) on the toolbar and select
+                        <em>Options</em>.
+                      </li>
+                      <li>
+                        <strong>Windows 10:</strong> Click <em>File</em> in the
+                        top-left corner, then select
+                        <em>Change folder and search options</em>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Switch to the <em>View</em> tab.</li>
+                  <li>
+                    Uncheck <em>Hide extensions for known file types</em>.
+                  </li>
+                  <li>Click <em>Apply</em>, then <em>OK</em>.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h5
+                  class="mb-2 flex items-center gap-2 text-sm font-semibold text-stone-800 dark:text-stone-200"
+                >
+                  <i data-lucide="apple" class="size-4"></i>
+                  macOS
+                </h5>
+
+                <ol
+                  class="list-decimal space-y-1 pl-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+                >
+                  <li>Open a Finder window.</li>
+                  <li>
+                    Click <em>Finder</em> in the menu bar and select
+                    <em>Settings</em> (or <em>Preferences</em> on older
+                    versions).
+                  </li>
+                  <li>Open the <em>Advanced</em> tab.</li>
+                  <li>Enable <em>Show all filename extensions</em>.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h5
+                  class="mb-2 flex items-center gap-2 text-sm font-semibold text-stone-800 dark:text-stone-200"
+                >
+                  <i data-lucide="terminal" class="size-4"></i>
+                  Linux
+                </h5>
+
+                <p
+                  class="mb-2 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+                >
+                  Most Linux file managers provide an option to display hidden
+                  file extensions. Alternatively, you can use the
+                  <code>file</code> command in the terminal to identify a file's
+                  actual type.
+                </p>
+
+                <div
+                  class="rounded-md bg-stone-100 px-3 py-2 dark:bg-stone-900"
+                >
+                  <code class="text-xs text-stone-700 dark:text-stone-300">
+                    file suspicious-file.pdf
+                  </code>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              03
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Watch out for urgency and threats
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Scammers often create a false sense of urgency to pressure you into
+            acting without thinking. Messages may claim that your account will
+            be suspended, a payment is overdue, or you've won a prize that
+            requires immediate action. Be suspicious of emails that pressure you
+            into clicking links, providing information, or making payments.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples of Urgency and Threats
+            </h4>
+
+            <div class="space-y-3">
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Account Suspension
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Your Microsoft account will be permanently suspended within
+                  24 hours unless you verify your identity."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Unpaid Invoice
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Your payment of $499 is overdue. Pay immediately to avoid
+                  additional charges."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Security Alert
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "We detected suspicious activity on your bank account. Click
+                  here immediately to prevent unauthorized access."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Prize Notification
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Congratulations! You've been selected to receive a $1,000
+                  gift card. Claim your prize within the next 30 minutes."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Government Threat
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "An outstanding tax balance has been detected. Failure to pay
+                  immediately may result in legal action."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              If you find yourself worrying about an urgent threat or demand in
+              an email, take a moment to step back and assess the situation.
+              Don't let the sender pressure you into acting immediately.
+              Instead, independently visit the organization's official website
+              or contact them through a verified communication channel to
+              confirm whether the situation is legitimate.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              04
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Check for suspicious links
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Emails can contain hyperlinks that disguise their actual
+            destinations. Before clicking anything, hover over links on desktop
+            or press and hold them on mobile to preview the destination. Make
+            sure the URL matches the organization the email claims to represent.
+          </p>
+
+          <aside
+            class="mb-2 rounded-lg border border-green-200/70 bg-green-50/60 p-4 dark:border-green-900/40 dark:bg-green-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="thumbs-up"
+                class="size-4 text-green-600 dark:text-green-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-green-800 dark:text-green-300"
+              >
+                Recommendation
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              Refer to our tips for identifying suspicious URLs to help
+              determine whether a hyperlink is legitimate.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              05
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Never share sensitive information
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Legitimate organizations generally won't ask you to send passwords,
+            verification codes, or other sensitive information through email. Be
+            particularly cautious of messages requesting banking information,
+            account credentials, or personal identification.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples of Requests for Sensitive Information
+            </h4>
+
+            <div class="space-y-3">
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Password Request
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Reply to this email with your account password to verify your
+                  identity."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Verification Code Request
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Please forward the six-digit verification code we just sent
+                  you to confirm your account."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Banking Information
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Your direct deposit information is outdated. Reply with your
+                  account and transit numbers to avoid payment delays."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Identity Verification
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Please attach a photo of your driver's licence and other
+                  identification documents to complete your verification."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              Never send passwords or verification codes through email, even if
+              the sender appears legitimate. If an organization needs to verify
+              your identity, use its official website or application.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              06
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Watch out for unexpected requests
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Be cautious of emails requesting unusual actions, especially when
+            they involve money, gift cards, payments, or changes to account
+            information. Scammers may impersonate coworkers, managers, or family
+            members to make their requests appear legitimate. Verify unusual
+            requests through another communication method.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples of Requests for Sensitive Information
+            </h4>
+
+            <div class="space-y-3">
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Gift Cards
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "I need you to purchase five $100 gift cards and send me the
+                  activation codes. I'll reimburse you later." (Impersonating a
+                  manager.)
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Urgent Payment
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Please transfer $4,500 to this new bank account before the
+                  end of the day." (Impersonating a business executive.)
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Payroll Changes
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "We've updated our banking provider. Please change your direct
+                  deposit information using the attached form."
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Family Emergency
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  "Hey, it's me. I lost my phone and need you to send me some
+                  money. I'll explain everything later."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              If someone requests money or an unusual action, contact them
+              through a separate, previously established communication method.
+              Don't rely on the contact information provided in the suspicious
+              email.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              07
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Look for inconsistencies
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Pay attention to unusual wording, spelling mistakes, inconsistent
+            branding, and formatting issues. While these aren't definitive signs
+            of a scam, they can indicate that an email isn't from the
+            organization it claims to represent.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples of Inconsistencies
+            </h4>
+
+            <div class="space-y-3">
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Spelling Mistakes
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  An email from a supposed professional organization contains
+                  numerous spelling and grammatical errors.
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Inconsistent Branding
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  An email claiming to be from Microsoft uses outdated logos,
+                  incorrect colours, or unfamiliar formatting.
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Unusual Wording
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  A supposedly Canadian bank sends an email containing awkward
+                  phrasing or terminology that doesn't match its usual
+                  communications.
+                </p>
+              </div>
+
+              <div class="rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60">
+                <div class="mb-2 flex items-center gap-2">
+                  <i
+                    data-lucide="TriangleExclamationPoint"
+                    class="size-4 text-amber-500"
+                  ></i>
+                  <h5
+                    class="text-sm font-semibold text-stone-800 dark:text-stone-200"
+                  >
+                    Poor Formatting
+                  </h5>
+                </div>
+
+                <p
+                  class="text-sm leading-relaxed text-stone-600 italic dark:text-stone-400"
+                >
+                  Text is misaligned, images appear broken, or different fonts
+                  and formatting styles are used throughout the message.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              Compare suspicious emails with previous messages from the same
+              organization. However, remember that well-written emails with
+              convincing branding can still be fraudulent.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <span
+              class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-stone-100 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+            >
+              08
+            </span>
+
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Be careful with reply-to addresses
+            </h3>
+          </div>
+
+          <p
+            class="mb-5 text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+          >
+            Always check who sent you an email before trusting its contents.
+            Scammers often impersonate legitimate companies, organizations, or
+            individuals by using display names and email addresses that look
+            convincing at first glance. Pay close attention to the actual email
+            address, particularly the domain name after the @ symbol. A familiar
+            display name does not necessarily mean the email came from a
+            legitimate sender.
+          </p>
+
+          <div class="mb-5">
+            <h4
+              class="mb-3 text-sm font-semibold text-stone-900 dark:text-stone-200"
+            >
+              Examples
+            </h4>
+
+            <div
+              class="space-y-3 rounded-lg bg-stone-50 p-4 dark:bg-stone-900/60"
+            >
+              <div class="space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-stone-500 dark:text-stone-400">
+                    Sender
+                  </span>
+                  <span
+                    class="text-xs font-medium text-green-600 dark:text-green-400"
+                  >
+                    Legitimate
+                  </span>
+                </div>
+                <code class="block text-sm">support@google.com</code>
+
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Reply-To
+                </span>
+                <code class="block text-sm">support@google.com</code>
+              </div>
+
+              <div
+                class="border-t border-stone-200 dark:border-stone-700"
+              ></div>
+
+              <div class="space-y-1">
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Sender
+                </span>
+                <code class="block text-sm">support@google.com</code>
+
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Reply-To
+                </span>
+                <div class="flex items-center justify-between gap-2">
+                  <code class="text-sm">support@google-support.com</code>
+                  <span
+                    class="shrink-0 text-xs font-medium text-amber-600 dark:text-amber-400"
+                  >
+                    Suspicious
+                  </span>
+                </div>
+                <p class="text-xs text-stone-500 dark:text-stone-400">
+                  Different domains.
+                </p>
+              </div>
+
+              <div
+                class="border-t border-stone-200 dark:border-stone-700"
+              ></div>
+
+              <div class="space-y-1">
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Sender
+                </span>
+                <code class="block text-sm">support@google.com</code>
+
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Reply-To
+                </span>
+                <div class="flex items-center justify-between gap-2">
+                  <code class="text-sm">support.google@gmail.com</code>
+                  <span
+                    class="shrink-0 text-xs font-medium text-amber-600 dark:text-amber-400"
+                  >
+                    Suspicious
+                  </span>
+                </div>
+                <p class="text-xs text-stone-500 dark:text-stone-400">
+                  Uses a personal email provider.
+                </p>
+              </div>
+
+              <div
+                class="border-t border-stone-200 dark:border-stone-700"
+              ></div>
+
+              <div class="space-y-1">
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Sender
+                </span>
+                <code class="block text-sm">support@google.com</code>
+
+                <span class="text-xs text-stone-500 dark:text-stone-400">
+                  Reply-To
+                </span>
+                <div class="flex items-center justify-between gap-2">
+                  <code class="text-sm">johndoe123@outlook.com</code>
+                  <span
+                    class="shrink-0 text-xs font-medium text-amber-600 dark:text-amber-400"
+                  >
+                    Suspicious
+                  </span>
+                </div>
+                <p class="text-xs text-stone-500 dark:text-stone-400">
+                  Unrelated email address.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            class="mb-2 rounded-lg border border-amber-200/70 bg-amber-50/60 p-4 dark:border-amber-900/40 dark:bg-amber-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="lightbulb"
+                class="size-4 text-amber-600 dark:text-amber-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-amber-800 dark:text-amber-300"
+              >
+                Quick Tip
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              Most email clients allow you to inspect the sender's details or
+              view the original message headers. If the reply-to address is
+              different or unexpected, independently verify it before
+              responding.
+            </p>
+          </aside>
+
+          <aside
+            class="mb-2 rounded-lg border border-blue-200/70 bg-blue-50/60 p-4 dark:border-blue-900/40 dark:bg-blue-950/20"
+          >
+            <div class="mb-2 flex items-center gap-2">
+              <i
+                data-lucide="info"
+                class="size-4 text-blue-600 dark:text-blue-400"
+              ></i>
+              <h4
+                class="text-sm font-semibold text-blue-800 dark:text-blue-300"
+              >
+                Note
+              </h4>
+            </div>
+            <p
+              class="text-sm leading-relaxed text-stone-600 dark:text-stone-400"
+            >
+              A different Reply-To address isn't automatically malicious.
+              Organizations sometimes use third-party services to handle
+              responses. What matters is whether the destination is expected and
+              can be verified.
+            </p>
+          </aside>
+        </article>
+
+        <article
+          class="mb-6 rounded-xl border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <div class="mb-4 flex items-center gap-3">
+            <h3 class="text-xl font-semibold text-stone-900 dark:text-white">
+              Additional Recommendations
+            </h3>
+          </div>
+
+          <p class="text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+            If you're still unsure whether an email is legitimate, there are a
+            couple ways to verify it. First, vistit the compan'ys official
+            website and look for its listed contact information. Alternatively,
+            find a previous email from the same company and compare the sender's
+            email address with the one you're suspicious of. Second, if the
+            company provides a support address, contact them directly and ask
+            whether the message is legitimate. You can include a screenshot of
+            the suspicious email, making sure to censor any sensitive or
+            personal information. Their support team should be able to help you
+            determine whether the email is genuine.
+          </p>
+        </article>
       </section>
     </main>
 
