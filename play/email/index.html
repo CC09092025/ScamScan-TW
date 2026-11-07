@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/output.css" />
+
+    <title>ScamScan</title>
+
+    <script>
+      const theme = localStorage.getItem("theme");
+
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </head>
+
+  <body
+    class="flex min-h-screen flex-col bg-stone-50 text-stone-800 transition-colors dark:bg-[#171615] dark:text-stone-200"
+  >
+    <!-- Header -->
+    <div
+      id="header"
+      class="min-h-20 border-b border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
+    ></div>
+
+    <!-- Main layout -->
+    <main
+      class="mx-auto mt-6 flex w-full max-w-7xl flex-1 flex-col gap-4 px-4 pb-6 sm:mt-8 sm:px-6 lg:flex-row lg:gap-6"
+    >
+      <!-- Inbox sidebar -->
+      <aside
+        id="inbox"
+        class="flex max-h-64 w-full shrink-0 flex-col overflow-hidden rounded-xl border border-stone-200 bg-white sm:max-h-72 lg:max-h-none lg:w-1/3 lg:max-w-sm dark:border-stone-800 dark:bg-[#201e1c]"
+      >
+        <!-- Inbox heading -->
+        <div class="border-b border-stone-200 p-4 sm:p-5 dark:border-stone-800">
+          <h1 class="text-lg font-semibold">Inbox</h1>
+          <p class="mt-1 text-sm text-stone-500 dark:text-stone-400">
+            Your available scenarios
+          </p>
+        </div>
+
+        <!-- Email list -->
+        <div
+          id="inbox-list"
+          class="min-h-0 flex-1 divide-y divide-stone-200 overflow-y-auto dark:divide-stone-800"
+        >
+          <!-- Scenario 1 -->
+          <a
+            href="#scenario-1"
+            id="scenario-1"
+            class="flex items-center gap-3 bg-stone-100 px-4 py-3 sm:px-5 sm:py-4 dark:bg-stone-800"
+          >
+            <span
+              class="size-2.5 shrink-0 rounded-full bg-blue-500"
+              title="Not completed"
+            ></span>
+
+            <div class="min-w-0 flex-1">
+              <h2 class="truncate text-sm font-semibold">
+                Suspicious Job Offer
+              </h2>
+              <p
+                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
+              >
+                An unexpected employment opportunity in your inbox.
+              </p>
+            </div>
+          </a>
+
+          <!-- Scenario 2 -->
+          <a
+            href="#scenario-2"
+            id="scenario-2"
+            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+          >
+            <span
+              class="size-2.5 shrink-0 rounded-full bg-purple-500"
+              title="Completed successfully"
+            ></span>
+
+            <div class="min-w-0 flex-1">
+              <h2 class="truncate text-sm font-medium">
+                Investment Opportunity
+              </h2>
+              <p
+                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
+              >
+                An investment promising unusually high returns.
+              </p>
+            </div>
+          </a>
+
+          <!-- Scenario 3 -->
+          <a
+            href="#scenario-3"
+            id="scenario-3"
+            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+          >
+            <span
+              class="size-2.5 shrink-0 rounded-full bg-green-500"
+              title="Suspicious items missed"
+            ></span>
+
+            <div class="min-w-0 flex-1">
+              <h2 class="truncate text-sm font-medium">QR Code Payment</h2>
+              <p
+                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
+              >
+                A QR code requesting payment information.
+              </p>
+            </div>
+          </a>
+
+          <!-- Scenario 4 -->
+          <a
+            href="#scenario-4"
+            id="scenario-4"
+            class="flex items-center gap-3 px-4 py-3 transition-colors hover:bg-stone-50 sm:px-5 sm:py-4 dark:hover:bg-stone-800/50"
+          >
+            <span
+              class="size-2.5 shrink-0 rounded-full bg-red-500"
+              title="Incorrect selections"
+            ></span>
+
+            <div class="min-w-0 flex-1">
+              <h2 class="truncate text-sm font-medium">Account Verification</h2>
+              <p
+                class="mt-1 truncate text-xs text-stone-500 dark:text-stone-400"
+              >
+                A message asking you to verify your account credentials.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Status legend -->
+        <div
+          class="hidden border-t border-stone-200 p-5 lg:block dark:border-stone-800"
+        >
+          <h3
+            class="mb-3 text-xs font-semibold tracking-wide text-stone-500 uppercase"
+          >
+            Status legend
+          </h3>
+
+          <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+            <li class="flex items-center gap-2.5">
+              <span class="size-2 shrink-0 rounded-full bg-blue-500"></span>
+              Not completed
+            </li>
+
+            <li class="flex items-center gap-2.5">
+              <span class="size-2 shrink-0 rounded-full bg-purple-500"></span>
+              Completed successfully
+            </li>
+
+            <li class="flex items-center gap-2.5">
+              <span class="size-2 shrink-0 rounded-full bg-green-500"></span>
+              Suspicious items missed
+            </li>
+
+            <li class="flex items-center gap-2.5">
+              <span class="size-2 shrink-0 rounded-full bg-red-500"></span>
+              Incorrect selections
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Email viewing area -->
+      <section
+        id="email-viewer"
+        class="flex min-h-125 min-w-0 flex-1 flex-col gap-4 sm:min-h-150"
+      >
+        <!-- Email toolbar -->
+        <div
+          id="email-toolbar"
+          class="flex min-h-16 flex-wrap items-center justify-between gap-3 rounded-xl border border-stone-200 bg-white px-4 py-3 sm:px-5 dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <span class="text-sm font-semibold">Email Preview</span>
+
+          <div class="flex items-center gap-2">
+            <button
+              id="email-scam"
+              type="button"
+              class="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-600 transition-colors hover:bg-red-100 sm:px-4 dark:border-red-900 dark:bg-red-950/30 dark:text-red-400 dark:hover:bg-red-950/60"
+            >
+              Scam
+            </button>
+
+            <button
+              id="email-safe"
+              type="button"
+              class="rounded-lg border border-green-200 bg-green-50 px-3 py-2 text-sm font-medium text-green-600 transition-colors hover:bg-green-100 sm:px-4 dark:border-green-900 dark:bg-green-950/30 dark:text-green-400 dark:hover:bg-green-950/60"
+            >
+              Safe
+            </button>
+
+            <button
+              id="email-confirm"
+              type="button"
+              class="rounded-lg bg-stone-800 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-stone-700 sm:px-4 dark:bg-stone-200 dark:text-stone-900 dark:hover:bg-white"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+
+        <!-- Email content -->
+        <div
+          id="email-content"
+          class="flex flex-1 flex-col rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-[#201e1c]"
+        >
+          <!-- Email header -->
+          <div
+            class="border-b border-stone-200 p-4 sm:p-6 dark:border-stone-800"
+          >
+            <!-- Subject -->
+            <h2
+              id="email-subject"
+              class="mb-5 text-lg font-semibold wrap-break-word sm:mb-6 sm:text-xl"
+            >
+              Email Subject
+            </h2>
+
+            <!-- Sender information -->
+            <div class="flex items-start gap-3">
+              <!-- Sender avatar -->
+              <div
+                id="email-avatar"
+                class="flex size-10 shrink-0 items-center justify-center rounded-full bg-stone-200 text-sm font-semibold text-stone-600 dark:bg-stone-700 dark:text-stone-300"
+              >
+                ?
+              </div>
+
+              <!-- Sender details -->
+              <div class="min-w-0 flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <p id="email-sender-name" class="text-sm font-semibold">
+                    Sender Name
+                  </p>
+
+                  <span
+                    id="email-timestamp"
+                    class="text-xs text-stone-500 dark:text-stone-400"
+                  >
+                    Date and Time
+                  </span>
+                </div>
+
+                <p
+                  id="email-sender-address"
+                  class="mt-1 text-xs break-all text-stone-500 dark:text-stone-400"
+                >
+                  sender@example.com
+                </p>
+
+                <p class="mt-1 text-xs text-stone-500 dark:text-stone-400">
+                  To:
+                  <span id="email-recipient">recipient@example.com</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email body -->
+          <article class="flex-1 p-4 sm:p-6">
+            <div id="email-body" class="max-w-3xl space-y-5 text-sm leading-7">
+              <p id="email-greeting">Hello Recipient,</p>
+
+              <p id="email-paragraph-1">
+                Email content goes here. This is where the scenario-specific
+                message will be displayed.
+              </p>
+
+              <p id="email-paragraph-2">
+                Additional paragraphs can be added as needed.
+              </p>
+            </div>
+          </article>
+
+          <!-- Email signature -->
+          <div
+            id="email-signature"
+            class="border-t border-stone-200 p-4 sm:p-6 dark:border-stone-800"
+          >
+            <p>Best regards,</p>
+
+            <p id="email-signature-name" class="font-semibold">Sender Name</p>
+
+            <p
+              id="email-signature-company"
+              class="text-stone-500 dark:text-stone-400"
+            >
+              Company Name
+            </p>
+          </div>
+
+          <!-- Attachments -->
+          <div
+            id="email-attachments"
+            class="border-t border-stone-200 p-4 sm:p-6 dark:border-stone-800"
+          >
+            <p class="mb-3 text-xs font-semibold text-stone-500 uppercase">
+              Attachments
+            </p>
+
+            <div id="email-attachment-list">
+              <p class="text-sm text-stone-400 dark:text-stone-500">
+                No attachments
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script type="module" src="/js/components.js"></script>
+    <script type="module" src="/js/theme.js"></script>
+  </body>
+</html>
