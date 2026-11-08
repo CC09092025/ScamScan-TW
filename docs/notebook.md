@@ -160,8 +160,6 @@ Most scams do not rely on zero-day vulnerabilities or sophisticated technical ex
 
 ## Part 3: Storyboard
 
-> Four to six panels. The first shows the problem, the last shows it solved, and the same persona appears throughout. Save images in `design/storyboard/` and embed them below with `![description](design/storyboard/panel-1.jpg)`.
-
 | Panel | Scene (where, who)                | What happens                                                                                                                                                                                  | What they think or feel                              | Screen shown                               |
 | ----- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------ |
 | 1     | Person checking emails at home    | A person is checking their email when they receive a message claiming their cloud storage is full and their photos will be permanently deleted unless they upgrade their storage immediately. | Confused and unsure whether the email is legitimate. | ![panel 1](./design/storyboard/panel1.png) |
@@ -464,19 +462,19 @@ There are also no images on the website. Therefore there's nothing to add alt te
 
 ### Self-assessment
 
-| Area                            | Points | My score | One line of justification                                                                                                              |
-| ------------------------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Problem definition and evidence | 15     | 15       | The project is based on a problem statement with strong, objective evidence.                                                           |
-| Scope and data                  | 10     | 8        | Some of the "forward looking" features may be more ambitious, but the essentials are strong.                                           |
-| Storyboard                      | 10     |          |                                                                                                                                        |
-| Wireframes and site map         | 10     | 9        | The email wireframe is a little complicated, but overall they provide a good idea on what to do.                                       |
-| Design decisions                | 5      | 4        | I believe the design decisions made were strong and sensible, although some of the reasoning could be explained in more detail.        |
-| HTML                            | 15     | 14       | I believe the HTML is strong, keeping the simple yet sensible layout of the website.                                                   |
-| CSS and responsiveness          | 15     | 12       | The website is responsive and maintains a consistent theme, although some validation and documentation tasks remain incomplete.        |
-| Git and GitHub                  | 15     | 7        | I used Git consistently for version control, but some work was completed manually rather than through GitHub issues and pull requests. |
-| Reflection and completeness     | 5      | 4        | The reflection addresses the major parts of the project, although some documentation and submission requirements remain incomplete.    |
+| Area                            | Points | My score | One line of justification                                                                                                                      |
+| ------------------------------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Problem definition and evidence | 15     | 15       | The project is based on a problem statement with strong, objective evidence.                                                                   |
+| Scope and data                  | 10     | 8        | Some of the "forward looking" features may be more ambitious, but the essentials are strong.                                                   |
+| Storyboard                      | 10     | 9        | The storyboard clearly communicates the problem, discovery, interaction, and intended outcome of the website through a realistic user journey. |
+| Wireframes and site map         | 10     | 9        | The email wireframe is a little complicated, but overall they provide a good idea on what to do.                                               |
+| Design decisions                | 5      | 4        | I believe the design decisions made were strong and sensible, although some of the reasoning could be explained in more detail.                |
+| HTML                            | 15     | 14       | I believe the HTML is strong, keeping the simple yet sensible layout of the website.                                                           |
+| CSS and responsiveness          | 15     | 12       | The website is responsive and maintains a consistent theme, although some validation and documentation tasks remain incomplete.                |
+| Git and GitHub                  | 15     | 7        | I used Git consistently for version control, but some work was completed manually rather than through GitHub issues and pull requests.         |
+| Reflection and completeness     | 5      | 4        | The reflection addresses the major parts of the project, although some documentation and submission requirements remain incomplete.            |
 
 ## Bonus (optional)
 
 - **Usability test (+3):** who I tested (roles), what happened, what I changed: YOUR ANSWER HERE
-- **Live site (+2):** https://...
+- **Live site (+2):** https://scamscan.pages.dev/
