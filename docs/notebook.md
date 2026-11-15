@@ -405,7 +405,7 @@ There are also no images on the website. Therefore there's nothing to add alt te
 - **Issue #2 (closed):** https://github.com/CC09092025/ScamScan-TW/issues/5
 - **Merged Pull Request for HTML:** https://github.com/CC09092025/ScamScan-TW/pull/3
 - **Merged Pull Request for CSS:** I used Git to merge _theme/merge_, so there's no merge request on GitHub to reference.
-- **Release v0.1.0:** TODO
+- **Release v0.1.0:** https://github.com/CC09092025/ScamScan-TW/releases/tag/v1.0
 
 ```text
 ~/Projects/ScamScan-TW main*
