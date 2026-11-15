@@ -136,6 +136,10 @@
     @apply rounded-control px-control-x py-control-y inline-flex items-center justify-center font-semibold transition-colors;
   }
 
+  header a.active {
+    @apply text-accent;
+  }
+
   .btn-primary {
     @apply bg-accent text-on-accent hover:bg-accent-dark;
   }

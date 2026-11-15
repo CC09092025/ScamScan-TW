@@ -67,8 +67,30 @@ async function loadComponent(selector, file) {
   createIcons({ icons: lucideIcons });
 
   if (selector === "#header") {
+    setActiveNavLink(element);
     document.dispatchEvent(new Event("headerLoaded"));
   }
+}
+
+function setActiveNavLink(headerElement) {
+  const currentPath = window.location.pathname.replace(/\/index\.html$/, "/");
+  const navLinks = headerElement.querySelectorAll("nav a, ul a");
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || !href.startsWith("/")) return;
+
+    const linkPath = href.replace(/\/index\.html$/, "/");
+    const isHome = linkPath === "/";
+    const isActive = isHome
+      ? currentPath === "/"
+      : currentPath === linkPath || currentPath.startsWith(linkPath);
+
+    if (isActive) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
 }
 
 loadComponent("#header", "/components/header.html");
