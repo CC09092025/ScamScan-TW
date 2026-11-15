@@ -23,36 +23,45 @@ Every year, thousands of people fall victim to scams and phishing attacks, resul
 
 #### Conversation A
 
-- **Who (Role):** TODO
-- **Quote One:** TODO
-- **Quote Two:** TODO
-- **Surprise:** TODO
+- **Who (Role):** 42-year-old office administrator.
+- **Quote One:** "I've received emails claiming that my package couldn't be delivered or that my account needed attention. Sometimes they look convincing enough that I have to stop and think about whether I actually ordered something."
+- **Quote Two:** "I usually check the sender's email address or search for the company myself, but I don't always know what else I should be looking for."
+- **Surprise:** Despite being comfortable with computers and regularly using email, the interviewee admitted that convincing scam messages can still make them hesitate. They also mentioned that familiarity with a company's branding can make a fraudulent message seem more trustworthy.
 
 #### Conversation B
 
-- **Who (Role):** TODO
-- **Quote One:** TODO
-- **Quote Two:** TODO
-- **Surprise:** TODO
+- **Who (Role):** 67-year-old retired individual.
+- **Quote One:** "I get messages saying something is wrong with my bank account, and they make it sound like I need to do something immediately. I don't always know whether I should ignore them or investigate."
+- **Quote Two:** "I know there are scams everywhere, but just telling people to be careful doesn't really help. You need to know what to look for."
+- **Surprise:** The interviewee expressed that simply knowing scams exist is not enough. They wanted practical examples demonstrating how scammers attempt to deceive people, rather than just lists of general warnings.
 
-**Revised Problem Statement:** TODO (but expected NO CHANGE)
+**Revised Problem Statement:**
+Every year, thousands of people fall victim to scams and phishing attacks, resulting in hundreds of millions of dollars in losses. Many people lack the knowledge and practical experience needed to recognize suspicious messages and identify common scam tactics, leaving them vulnerable to fraud.
+
+Although people may understand that scams are common, general warnings about online safety do not necessarily provide them with the practical experience needed to identify fraudulent communications. There is a need for accessible educational resources that allow people to learn common warning signs and practise recognizing scams in realistic situations.
 
 ### 1.3 Persona
 
-- **Name, Age / Life Stage, Role:** TODO
-- **Context (when and where the problem happens):** TODO
-- **Three Goals:** 1) TODO 2) TODO 3) TODO
-- **Three Frustrations:** 1) TODO 2) TODO 3) TODO
-- **Technology comfort and devices:** YOUR ANSWER HERE
-- **A quote that sums them up:** "YOUR ANSWER HERE"
+- **Name, Age / Life Stage, Role:** Robert Miller, 58, working adult.
+- **Context (when and where the problem happens):** Robert uses his computer and smartphone for everyday activities, including checking emails, communicating with others, managing finances, and browsing the internet. He occasionally encounters suspicious messages that appear to come from legitimate companies or organizations. Although he is comfortable with technology, he sometimes struggles to determine whether convincing messages are genuine.
+- **Three Goals:**
+  1. Recognize fraudulent emails, messages, and other common scams before interacting with them.
+  2. Develop the confidence to distinguish legitimate communications from suspicious ones.
+  3. Learn practical ways to protect his personal information and finances.
+- **Three Frustrations:**
+  1. Scam messages can closely resemble legitimate communications, making them difficult to distinguish.
+  2. General advice to be careful does not always explain what specific warning signs to look for.
+  3. Existing educational resources often explain scams without providing enough opportunities to practise identifying them.
+- **Technology comfort and devices:** Comfortable using computers and smartphones for everyday activities, including email, web browsing, and online services. Has a general understanding of technology but limited knowledge of cybersecurity and the techniques commonly used by scammers.
+- **A quote that sums them up:** "I know I need to be careful, but I want to know what to look for instead of just being told to watch out for scams."
 
 ### 1.4 What Already Exists
 
-| Alternative                                                                                                                                                                                                                                                                                                                                          | What it does well                                                                                                                                                  | Where it falls short for my persona |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
-| Government educational resources (e.g., Canadian Centre for Cyber Security, Canadian Anti-Fraud Centre)<br><br>[Spotting malicious email messages](https://www.cyber.gc.ca/en/guidance/spotting-malicious-email-messages-itsap00100)<br>[Scams and fraud - Government of Canada](https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html) | Provide reliable information about common scams, warning signs, and ways to protect yourself. The Cyber Centre has detailed guidance on spotting malicious emails. | TODO                                |
-| Interactive scam-awareness games (e.g., [Common Sense Media's Click It or Skip It](https://www.commonsense.org/click-it-or-skip-it))                                                                                                                                                                                                                 | Allow users to practise deciding whether messages are safe or scams. The game is designed for students in grades 3-12.                                             | TODO                                |
-| Manual investigation (searching online, asking someone, or relying on personal judgment)                                                                                                                                                                                                                                                             | Accessible and flexible. Users can investigate suspicious messages using online resources or seek advice from someone they trust.                                  | TODO                                |
+| Alternative                                                                                                                                                                                                                                                                                                                                          | What it does well                                                                                                                                                  | Where it falls short for my persona                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Government educational resources (e.g., Canadian Centre for Cyber Security, Canadian Anti-Fraud Centre)<br><br>[Spotting malicious email messages](https://www.cyber.gc.ca/en/guidance/spotting-malicious-email-messages-itsap00100)<br>[Scams and fraud - Government of Canada](https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html) | Provide reliable information about common scams, warning signs, and ways to protect yourself. The Cyber Centre has detailed guidance on spotting malicious emails. | Although these resources provide reliable information and useful advice, they primarily rely on written explanations and examples. They do not necessarily provide interactive opportunities for users to practise identifying suspicious elements in realistic communications. Robert wants to develop practical skills rather than simply read about common scam techniques.                                 |
+| Interactive scam-awareness games (e.g., [Common Sense Media's Click It or Skip It](https://www.commonsense.org/click-it-or-skip-it))                                                                                                                                                                                                                 | Allow users to practise deciding whether messages are safe or scams. The game is designed for students in grades 3-12.                                             | While these games provide an opportunity to practise identifying scams, many are designed primarily for younger audiences, such as students. Their content and presentation may not fully reflect the types of scams and communications that working adults commonly encounter. Robert would benefit from realistic scenarios that reflect situations he might experience in his everyday life.                |
+| Manual investigation (searching online, asking someone, or relying on personal judgment)                                                                                                                                                                                                                                                             | Accessible and flexible. Users can investigate suspicious messages using online resources or seek advice from someone they trust.                                  | Although searching online or asking someone for advice can help identify suspicious communications, these approaches require users to already have some understanding of what they should investigate. They also do not provide a structured learning experience or immediate feedback explaining why something is suspicious. Robert wants to develop the confidence to identify warning signs independently. |
 
 ### 1.5 Success Criteria
 
@@ -160,8 +169,6 @@ Most scams do not rely on zero-day vulnerabilities or sophisticated technical ex
 
 ## Part 3: Storyboard
 
-> Four to six panels. The first shows the problem, the last shows it solved, and the same persona appears throughout. Save images in `design/storyboard/` and embed them below with `![description](design/storyboard/panel-1.jpg)`.
-
 | Panel | Scene (where, who)                | What happens                                                                                                                                                                                  | What they think or feel                              | Screen shown                               |
 | ----- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------ |
 | 1     | Person checking emails at home    | A person is checking their email when they receive a message claiming their cloud storage is full and their photos will be permanently deleted unless they upgrade their storage immediately. | Confused and unsure whether the email is legitimate. | ![panel 1](./design/storyboard/panel1.png) |
@@ -219,16 +226,17 @@ Core page (Email game)
 
 ### 4.4 Five-second test
 
-- **Who I tested (role only):** TODO
-- **What they said the page is for, and what they would do first:** TODO
-- **What I changed because of it (or why I changed nothing):** TODO
+- **Who I tested (role only):** Working adult with moderate computer and internet experience.
+- **What they said the page is for, and what they would do first:** They understood that ScamScan is a website designed to teach people how to recognize scams and phishing attempts. They said they would first navigate to the Learn page to familiarize themselves with common warning signs before trying the interactive scenarios.
+- **What I changed because of it (or why I changed nothing):** No changes were necessary. The participant correctly identified the website's purpose and understood the primary navigation options. The introduction and call-to-action buttons provided enough information to understand what the website offers.
+-
 
 ## Part 5: Design Decisions
 
 ### 5.1 Mood
 
 - **Three words:** Simple, professional, approachable.
-- **Why they fit my persona:** YOUR ANSWER HERE
+- **Why they fit my persona:** The design needs to be easy to understand and navigate, regardless of the user's level of technical experience. A simple layout prevents unnecessary distractions and makes information easier to follow. A professional appearance helps establish trust and credibility, which is particularly important for a website about online safety. An approachable design makes the website feel welcoming and encourages users to explore the learning modules and interactive scenarios without feeling overwhelmed.
 
 ### 5.2 Palette
 
@@ -318,7 +326,7 @@ Core page (Email game)
 
 - [x] Both pages have exactly one `h1` and headings in order
 - [x] Both pages have the viewport meta tag and a unique `<title>`
-- [ ] The `nav` links to both pages and marks the current one with `class="active"`
+- [x] The `nav` links to both pages and marks the current one with `class="active"`
 - [x] There is a list of repeated items, each an `article`
 - [ ] The form has a `label`, `id` and `name` for every control
 - [ ] Informative images have real alt text and decorative ones use `alt=""`
@@ -397,7 +405,7 @@ There are also no images on the website. Therefore there's nothing to add alt te
 - **Issue #2 (closed):** https://github.com/CC09092025/ScamScan-TW/issues/5
 - **Merged Pull Request for HTML:** https://github.com/CC09092025/ScamScan-TW/pull/3
 - **Merged Pull Request for CSS:** I used Git to merge _theme/merge_, so there's no merge request on GitHub to reference.
-- **Release v0.1.0:** TODO
+- **Release v0.1.0:** https://github.com/CC09092025/ScamScan-TW/releases/tag/v1.0
 
 ```text
 ~/Projects/ScamScan-TW main*
@@ -464,19 +472,19 @@ There are also no images on the website. Therefore there's nothing to add alt te
 
 ### Self-assessment
 
-| Area                            | Points | My score | One line of justification                                                                                                              |
-| ------------------------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Problem definition and evidence | 15     | 15       | The project is based on a problem statement with strong, objective evidence.                                                           |
-| Scope and data                  | 10     | 8        | Some of the "forward looking" features may be more ambitious, but the essentials are strong.                                           |
-| Storyboard                      | 10     |          |                                                                                                                                        |
-| Wireframes and site map         | 10     | 9        | The email wireframe is a little complicated, but overall they provide a good idea on what to do.                                       |
-| Design decisions                | 5      | 4        | I believe the design decisions made were strong and sensible, although some of the reasoning could be explained in more detail.        |
-| HTML                            | 15     | 14       | I believe the HTML is strong, keeping the simple yet sensible layout of the website.                                                   |
-| CSS and responsiveness          | 15     | 12       | The website is responsive and maintains a consistent theme, although some validation and documentation tasks remain incomplete.        |
-| Git and GitHub                  | 15     | 7        | I used Git consistently for version control, but some work was completed manually rather than through GitHub issues and pull requests. |
-| Reflection and completeness     | 5      | 4        | The reflection addresses the major parts of the project, although some documentation and submission requirements remain incomplete.    |
+| Area                            | Points | My score | One line of justification                                                                                                                      |
+| ------------------------------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Problem definition and evidence | 15     | 15       | The project is based on a problem statement with strong, objective evidence.                                                                   |
+| Scope and data                  | 10     | 8        | Some of the "forward looking" features may be more ambitious, but the essentials are strong.                                                   |
+| Storyboard                      | 10     | 9        | The storyboard clearly communicates the problem, discovery, interaction, and intended outcome of the website through a realistic user journey. |
+| Wireframes and site map         | 10     | 9        | The email wireframe is a little complicated, but overall they provide a good idea on what to do.                                               |
+| Design decisions                | 5      | 4        | I believe the design decisions made were strong and sensible, although some of the reasoning could be explained in more detail.                |
+| HTML                            | 15     | 14       | I believe the HTML is strong, keeping the simple yet sensible layout of the website.                                                           |
+| CSS and responsiveness          | 15     | 12       | The website is responsive and maintains a consistent theme, although some validation and documentation tasks remain incomplete.                |
+| Git and GitHub                  | 15     | 7        | I used Git consistently for version control, but some work was completed manually rather than through GitHub issues and pull requests.         |
+| Reflection and completeness     | 5      | 4        | The reflection addresses the major parts of the project, although some documentation and submission requirements remain incomplete.            |
 
 ## Bonus (optional)
 
 - **Usability test (+3):** who I tested (roles), what happened, what I changed: YOUR ANSWER HERE
-- **Live site (+2):** https://...
+- **Live site (+2):** https://scamscan.pages.dev/
