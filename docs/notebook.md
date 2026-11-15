@@ -1,13 +1,22 @@
 # Project Planning Document
 
-| #   | Question - Yes, No, Why                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **A real-world group of people has this problem, and I can talk to some of them.**<br><br>**Yes.** According to the Government of Canada, Canadians collectively lost over $704 million to fraud in 2025, with total losses since 2022 surpassing $2.4 billion. However, these figures represent only a fraction of the actual harm, as it is estimated that only 5% to 10% of fraud cases are reported.<br><br>[Government of Canada: Fraud Prevention Month](https://www.canada.ca/en/competition-bureau/news/2026/03/fraud-prevention-month-to-bring-hidden-crime-into-the-spotlight.html)                                                                                                                                                                                         |
-| 2   | **Users do something in the app (not just read).**<br><br>**Yes.** Users will be able to play through scenarios that put their investigative knowledge of scam detection to the test. They will encounter both legitimate and illegitimate scenarios, with the difficulty gradually increasing as they progress through each scenario (emails, messages, phone calls, etc.).<br><br>Ideally, users will first learn how to recognize and avoid scams through the learning modules. They can then play through interactive scenarios to test how well they have retained that knowledge. We could optionally include a traditional quiz at the end of each learning module to provide a preliminary assessment of the user's knowledge. However, this feature is not necessary for V1. |
-| 3   | **The app needs to remember things.**<br><br>**Yes.** The idea would be for users to have accounts on the website where they can track their progress, including which scenarios they've played and how they performed, instead of having to remember it themselves.<br><br>In the future, we could also introduce a system that tracks when users review the learning modules and recommends when they should play through the scenarios again to refresh their knowledge. However, this feature is not necessary for V1. Additionally, we could create a system that allows this information to be shared with, for example, a business using the website to train its employees. However, this is an optimistic future goal and is not something we are actively pursuing.         |
-| 4   | **I can describe the first version in one sentence.**<br><br>**Yes.** Complete all essential pages, including Home, About, Learn, and Play, along with the game functionality for one scenario (in this case, email), which will also serve as a framework for developing all subsequent scenarios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 5   | **I can picture at least three screens.**<br><br>**Yes.** We have already completed the home page, learn selection page, individual learn module pages, play selection page, email play page, and messaging play page, and the remaining scenarios will be based on their real-world counterparts, making them relatively easy to conceptualize.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 6   | **I alone could build a simple first version.**<br><br>**Yes.** The central game structure is simple. We create the scenarios, identify what is suspicious about each email, and define whether the email is a scam or legitimate. I do not expect any major roadblocks with this process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+- **Student Name:** Carter Atkins
+- **GitHub Username:** CC09092025
+
+## Part 0
+
+- **Project Name:** ScamScan
+- **Project Tagline:** Learn to recognize scams before they happen.
+- **Repository Link:** https://github.com/CC09092025/ScamScan-TW
+
+| #   | Question - Yes, No, Why                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **A real-world group of people has this problem, and I can talk to some of them.**<br><br>**Yes.** According to the Government of Canada, Canadians collectively lost over $704 million to fraud in 2025, with total losses since 2022 surpassing $2.4 billion. However, these figures represent only a fraction of the actual harm, as it is estimated that only 5% to 10% of fraud cases are reported.<br><br>[Government of Canada: Fraud Prevention Month](https://www.canada.ca/en/competition-bureau/news/2026/03/fraud-prevention-month-to-bring-hidden-crime-into-the-spotlight.html)                                                                                                                                                                                                                                                                                                                               |
+| 2   | **Users do something in the app (not just read).**<br><br>**Yes.** Users will be able to play through scenarios that put their investigative knowledge of scam detection to the test. They will encounter both legitimate and illegitimate scenarios, with the difficulty gradually increasing as they progress through each scenario (emails, messages, phone calls, etc.).<br><br>Ideally, users will first learn how to recognize and avoid scams through the learning modules. They can then play through interactive scenarios to test how well they have retained that knowledge. We could optionally include a traditional quiz at the end of each learning module to provide a preliminary assessment of the user's knowledge. However, this feature is not necessary for V1.                                                                                                                                       |
+| 3   | **The app needs to remember things.**<br><br>**Yes.** In the future, users could have accounts on the website where they can track their progress, including which scenarios they've played and how they performed. This would allow users to monitor their improvement over time instead of having to remember their results themselves. However, user accounts and progress tracking are not included in V1. They are potential features for a future version of the website. In the future, we could also introduce a system that tracks when users review the learning modules and recommends when they should play through the scenarios again to refresh their knowledge. Additionally, we could create a system that allows this information to be shared with, for example, a business using the website to train its employees. These are longer-term goals and are not something we are actively pursuing for V1. |
+| 4   | **I can describe the first version in one sentence.**<br><br>**Yes.** Complete all essential pages, including Home, About, Learn, and Play, along with the game functionality for one scenario (in this case, email), which will also serve as a framework for developing all subsequent scenarios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 5   | **I can picture at least three screens.**<br><br>**Yes.** We have already completed the home page, learn selection page, individual learn module pages, play selection page, and the HTML structure for the email and messaging play pages. However, the interactive game functionality for these scenarios has not yet been implemented. The remaining scenarios will be based on their real-world counterparts, making them relatively easy to conceptualize.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 6   | **I alone could build a simple first version.**<br><br>**Yes.** The central game structure is simple. We create the scenarios, identify what is suspicious about each email, and define whether the email is a scam or legitimate. I do not expect any major roadblocks with this process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 **My one-sentence description of the first version:** Complete all essential pages, including Home, About, Learn, and Play, along with the game functionality for one scenario (in this case, email), which will also serve as a framework for developing all subsequent scenarios.
 
@@ -17,7 +26,7 @@
 
 ### 1.1 Problem Statement
 
-Every year, thousands of people fall victim to scams and phishing attacks, resulting in hundreds of millions of dollars in losses. Many people lack the knowledge and practical experience needed to recognize suspicious messages and identify common scam tactics, leaving them vulnerable to fraud.
+People who use email and other online services struggle to identify fraudulent communications because scam messages often imitate legitimate organizations and use convincing tactics. This can make it difficult to distinguish genuine communications from scams, even for people who are comfortable using technology. As a result, people may unknowingly interact with fraudulent messages, expose their personal information, or lose money.
 
 ### 1.2 Evidence from Real People
 
@@ -113,12 +122,15 @@ Most scams do not rely on zero-day vulnerabilities or sophisticated technical ex
 ### 2.2 Main User Flow
 
 1. **Home Page:** The user visits ScamScan and is introduced to the website and its purpose.
-2. **Play Selection Page:** The user selects a scam category they want to practise identifying.
-3. **Game Page:** The user is presented with a realistic scenario, such as an email containing potentially suspicious elements.
-4. **Game Page:** The user examines the scenario and selects the elements they believe are suspicious.
-5. **Game Page:** The user submits their selections and receives immediate feedback explaining which elements they correctly or incorrectly identified.
-6. **Results Page:** The user reviews their score and sees how well they performed in the scenario.
-7. **Learn Page:** The user can visit educational modules to learn more about common scam techniques and how to recognize them.
+2. **Learn Page:** The user can browse the available learning modules covering different types of scams.
+3. **Learning Module:** The user selects a module and learns about common scam techniques and warning signs.
+4. **Play Selection Page:** The user selects a scam category they want to practise identifying.
+5. **Game Page:** The user is presented with a realistic scenario, such as an email containing potentially suspicious elements.
+6. **Game Page:** The user examines the scenario and selects the elements they believe are suspicious.
+7. **Game Page:** The user submits their selections and receives immediate feedback explaining which elements they correctly or incorrectly identified.
+8. **Results Page:** The user reviews their score and sees how well they performed in the scenario.
+
+Users can also access the Play page directly without completing a learning module first.
 
 ### 2.3 Data Sketch
 
@@ -135,6 +147,8 @@ Most scams do not rely on zero-day vulnerabilities or sophisticated technical ex
 - A scenario can have multiple attempts from different users.
 - Each attempt belongs to one scenario and records the user's performance.
 - A learning module can be associated with multiple scenarios, helping users practise what they have learned.
+
+**V1 Scope Note:** This data sketch represents a possible future data structure for ScamScan. User accounts and persistent progress tracking are not included in V1, as they are marked as Won't-have features in the project scope. The initial version will focus on the scenarios, learning modules, and immediate feedback.
 
 ### 2.4 Page List
 
@@ -194,17 +208,13 @@ flowchart TD
 
 ### 4.2 Wireframes
 
-> Four images: Home and core page, each on a phone-width and a desktop-width screen. Real words, no colour. Embed them.
+**Home page (desktop and phone wireframes):**
 
-**Home, desktop and phone:**
+![Home page (desktop and phone wireframes](./wireframe/wireframe_homePage.png)
 
-![Home page wireframe](./wireframe/wireframe_homePage.png)
+**Core page, Email Game (desktop and phone wireframes):**
 
-**Core page, desktop and phone:**
-
-![Email game wireframe - phone](./wireframe/wireframe_emailPage.png)
-
-For the ScamScan home page, you could annotate the main regions as follows:
+![Core page, Email Game (desktop and phone wireframes)](./wireframe/wireframe_emailPage.png)
 
 ### 4.3 Annotations
 
@@ -229,7 +239,6 @@ Core page (Email game)
 - **Who I tested (role only):** Working adult with moderate computer and internet experience.
 - **What they said the page is for, and what they would do first:** They understood that ScamScan is a website designed to teach people how to recognize scams and phishing attempts. They said they would first navigate to the Learn page to familiarize themselves with common warning signs before trying the interactive scenarios.
 - **What I changed because of it (or why I changed nothing):** No changes were necessary. The participant correctly identified the website's purpose and understood the primary navigation options. The introduction and call-to-action buttons provided enough information to understand what the website offers.
--
 
 ## Part 5: Design Decisions
 
@@ -321,6 +330,11 @@ Core page (Email game)
 | Category lists                | `<section>`, `<ul>`, `<li>` | `index.html`             |
 | How it works                  | `<section>`, `<ol>`, `<li>` | `index.html`             |
 | Footer                        | `<footer>`                  | `components/footer.html` |
+| Email navigation / Inbox      | `<aside>`, `<ul>`, `<li>`   | `play/email`             |
+| Email content / Message       | `<main>`, `<article>`       | `play/email`             |
+| Email header / Details        | `<header>`, `<p>`           | `play/email`             |
+| Answer buttons / Controls     | `<button>`                  | `play/email`             |
+| Game feedback / Results       | `<section>`, `<p>`          | `play/email`             |
 
 ### 6.2 Checks
 
@@ -328,13 +342,13 @@ Core page (Email game)
 - [x] Both pages have the viewport meta tag and a unique `<title>`
 - [x] The `nav` links to both pages and marks the current one with `class="active"`
 - [x] There is a list of repeated items, each an `article`
-- [ ] The form has a `label`, `id` and `name` for every control
-- [ ] Informative images have real alt text and decorative ones use `alt=""`
+- [ ] The form has a `label`, `id` and `name` for every control (1)
+- [ ] Informative images have real alt text and decorative ones use `alt=""` (2)
 - [x] No lorem ipsum anywhere
 - [x] I used at least one absolute, one relative and one same-page link
 
-There are currently no forms on the website. Therefore "The form as a `label`, `id`, and `name` for every control cannot be checked.
-There are also no images on the website. Therefore there's nothing to add alt text to.
+(1) Not applicable. The website does not currently contain forms or form controls.
+(2) Not applicable. The website does not currently contain images requiring alt text.
 
 ### 6.3 Validator results
 
@@ -343,23 +357,21 @@ There are also no images on the website. Therefore there's nothing to add alt te
 
 **Errors I met and fixed (at least one):**
 
-| Page                            | Errors | Warnings | Describe Errors / Warnings                                                                                                                                                                                                                                                                                                                                                                                                                     | Resolved?                                                                                                                             |
-| ------------------------------- | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Home Page (/)                   | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).<br>                                                                                                                                                                                                                                                                                                               | Yes                                                                                                                                   |
-| About Page (/about)             | 0      | 0        | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                            | N/A                                                                                                                                   |
-| Learn Page (/learn)             | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                                                                                   | Yes                                                                                                                                   |
-| Learn Email Page (/learn/email) | 0      | 2        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).<br>The warning was that a `section` element did not contain a heading (`h2`-`h6`) to identify its content. If no heading was needed, the validator suggested using a `div` instead.                                                                                                                               | Yes                                                                                                                                   |
-| Play Page (/play)               | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                                                                                   | Yes                                                                                                                                   |
-| Play Email Page (/play/email)   | 0      | 1        | This warning means that at least one `<article>` element does not contain a heading (`h2` through `h6`) identifying its content.                                                                                                                                                                                                                                                                                                               |                                                                                                                                       |
-| Header and Footer               | 3      | 1        | The warning was that the `html` element was missing a `lang` attribute to declare the language of the document.<br>The error was that the document's head element was missing a required title element.<br>The error was that the HTML document was missing the <!DOCTYPE html> declaration at the beginning.<br>The error was that the document did not declare its character encoding, causing the validator to default to windows-1252.<br> | No. `header.html` nor `footer.html`aren't meant to be accessed on their own. They attach themselves to other pages as components.<br> |     |
+| Page                            | Errors | Warnings | Description                                                                                                                                                                                                                                                                                                                                                                                | Resolved? |
+| ------------------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| Home Page (/)                   | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                               | Yes       |
+| About Page (/about)             | 0      | 0        | N/A                                                                                                                                                                                                                                                                                                                                                                                        | N/A       |
+| Learn Page (/learn)             | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                               | Yes       |
+| Learn Email Page (/learn/email) | 0      | 2        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).<br>The warning was that a `section` element did not contain a heading (`h2`-`h6`) to identify its content. If no heading was needed, the validator suggested using a `div` instead.                                                                           | Yes       |
+| Play Page (/play)               | 0      | 1        | The warning was that the document contained heading elements, but none of them was recognized as a level-one heading (`h1`).                                                                                                                                                                                                                                                               | Yes       |
+| Play Email Page (/play/email)   | 0      | 1        | This warning means that at least one `<article>` element does not contain a heading (`h2` through `h6`) identifying its content.                                                                                                                                                                                                                                                           | Yes       |
+| Header and Footer               | 3      | 1        | These results occurred because `header.html` and `footer.html` are HTML fragments rather than standalone documents. They do not contain their own `<!DOCTYPE html>`, `<html>`, `<head>`, title, or character encoding declarations. The missing `lang` attribute is also expected because these fragments are inserted into the main page documents, which provide the document structure. | N/A       |
 
 ---
 
 ## Part 7: Style It (CSS)
 
 ### 7.1 Match table
-
-> Compare the finished pages with your wireframes.
 
 | Page                   | What matches                                                                                                                                                             | What changed, and why                                                                                                                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -382,7 +394,9 @@ There are also no images on the website. Therefore there's nothing to add alt te
 
 ### 7.4 CSS validator
 
-**What the W3C CSS Validator said (and whether any warning matters):** Testing the `output.css` tailwind generates (not `input.css`), it gave errors related to Vendor extensions, Vendor pseudo-classes and elements, CSS variables not statically checked, and a compatability warning with `apperance: button`. I chose to ignore these warnings because they primarily relate to browser-specific CSS extensions, pseudo-elements, and dynamically resolved CSS variables. These are intentional parts of the styling used to maintain browser compatibility and customize form elements. The warnings do not indicate actual CSS errors, and removing or changing these declarations could negatively affect the website's appearance or functionality.
+**What the W3C CSS Validator said (and whether any warning matters):** Testing the `output.css` file generated by Tailwind CSS, rather than `input.css`, produced validation messages related to vendor extensions, vendor-specific pseudo-classes and elements, CSS variables that could not be statically checked, and compatibility with `appearance: button`.
+
+I chose to leave these messages unchanged because they primarily relate to browser-specific CSS extensions, pseudo-elements, and dynamically resolved CSS variables. These declarations are intentional parts of the styling used to maintain browser compatibility and customize form elements. They do not indicate problems with the website's intended appearance or functionality, so removing or changing them could negatively affect the styling.
 
 ### 7.5 Screenshots
 
@@ -405,7 +419,7 @@ There are also no images on the website. Therefore there's nothing to add alt te
 - **Issue #2 (closed):** https://github.com/CC09092025/ScamScan-TW/issues/5
 - **Merged Pull Request for HTML:** https://github.com/CC09092025/ScamScan-TW/pull/3
 - **Merged Pull Request for CSS:** I used Git to merge _theme/merge_, so there's no merge request on GitHub to reference.
-- **Release v0.1.0:** https://github.com/CC09092025/ScamScan-TW/releases/tag/v1.0
+- **Release v0.1.0:** https://github.com/CC09092025/ScamScan-TW/releases/tag/v0.1.0
 
 ```text
 ~/Projects/ScamScan-TW main*
@@ -486,5 +500,5 @@ There are also no images on the website. Therefore there's nothing to add alt te
 
 ## Bonus (optional)
 
-- **Usability test (+3):** who I tested (roles), what happened, what I changed: YOUR ANSWER HERE
+- **Usability test (+3):** I tested the website with a working adult with moderate computer and internet experience. The participant correctly identified ScamScan's purpose and understood that they could use the Learn page to familiarize themselves with common warning signs before trying the interactive scenarios. No changes were necessary because the introduction and navigation options communicated the website's purpose clearly.
 - **Live site (+2):** https://scamscan.pages.dev/
